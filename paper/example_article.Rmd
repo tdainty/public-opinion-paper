@@ -43,6 +43,9 @@ summary(mtcars)
 ---
 # This is a comment, set off with --- and started with #.  Comments are good for notes to self that you don't want to show up in the output.  Below is LaTeX code for a page break.
 ---
+# test
+
+---
 \pagebreak 
 ## Including Plots
 
