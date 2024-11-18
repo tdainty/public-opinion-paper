@@ -6,16 +6,16 @@ output:
     fig_caption: true
     latex_engine: pdflatex
     template: svm-latex-ms2.tex
-title: "An Example Article"
+title: "Barriers, Borders, and Beliefs: Proximity to the Border and Border Fortification's Impact on Immigration Attitudes"
 thanks: "The paper's revision history and the materials needed to reproduce its analyses can be found [on Github here](http://github.com/tdainty/example_article). Corresponding author: [thomas-dainty@uiowa.edu](mailto:thomas-dainty@uiowa.edu). Current version: `r format(Sys.time(), '%B %d, %Y')`."
 author:
 - name: Thomas Dainty
   affiliation: University of Iowa
-abstract: "Here's where you write 100 to 250 words, depending on the journal, that describe your objective, methods, results, and conclusion."
+abstract: "In recent years, border fortifications and barriers have been established or strengthened to counter perceived threats from mass migration. While recent work has focused on the factors that impact opinions on immigration, this study explores the role of survey respondent's geographic proximity to the borders as a means to test how potentially enhanced personal exposure to tangible state policies such as border fortifications as well as greater personal exposure to migrants themselves impacts respondents subsequent opinion on immigrants, immigration policy, and nationalistic attitudes. Does geographic proximity to the border impact public opinion on immigration policy? Do visible state policies such as border fortifications shape opinion? Respondents with little personal exposure to state borders and those who cross them may be more susceptible to state narratives or negative stereotypes of migrants as an Otherizing informational heuristic, impacting their opinion on immigration policy. However, those who live near the border ought to be less susceptible to such narratives because of personal experience related to the subject matter, resulting in greater favorability towards migrants and pro-immigration policy. I argue that border fortifications serve as a mediating factor for this relationship, with greater fortifications increasing perceived cultural distance between the resident and migrant, reducing the benefits of intergroup contact and furthering the gap in immigrant attitudes between those who live near the border and those who live far from it. INSERT FINDINGS HERE"
 keywords: "these, always seem silly, to me, given google, but regardless"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
-fontsize: 11pt
-spacing: single
+fontsize: 12pt
+spacing: double
 bibliography: \dummy{`r file.path(getwd(), list.files(getwd(), "bib$"))`}
 biblio-style: apsr
 citecolor: black
@@ -56,13 +56,8 @@ library(compiler)
 library(parallel)
 library(boot)
 library(lattice)
-
-```
-
-
-
-```{r, include=FALSE}
 options(tinytex.verbose = TRUE)
+
 ```
 
 
@@ -84,119 +79,37 @@ Test
 
 # Theory
 
-I argue that border fortifications increase the psychological isolation of one nation from another for individuals living nearby, exacerbating the perceived cultural distance between migrant and resident. This paper draws inspiration and applies aspects of Mutz and Simmons’ (2022) theory which argues that walls create psychological distance between residents of either side of the border, creating negative inferences about the relationship between both countries. However, this paper extends the theory further by arguing that walls and fortifications more generally serve as an explicit reminder of state power and a visual, tangible, narrative that can enhance the characterization of migrants as ills on society.   
+This paper draws inspiration and applies aspects of Mutz and Simmons’ (2022) theory which argues that walls create psychological distance between residents of either side of the border, creating negative inferences about the relationship between both countries. However, this paper extends the theory further by arguing that walls and fortifications more generally serve as an explicit reminder of state power and a visual, tangible, narrative that can create or exacerbate negative attitudes towards immigrants. I argue this for two reasons. First, I argue that border fortifications increase the psychological isolation of one nation from another for individuals living nearby, exacerbating the perceived cultural distance between migrant and resident. Second, I argue that the visible, tangible, reality of border fortifications serves as a heuristic to those living further away from the border that the public may use to form attitudes and opinions on immigrants and immigration policy.
 
 In contexts with little border fortification, intergroup contact could help provide information and can circumvent convenient heuristics such as stereotypes and media narratives, complicating residents’ thoughts and creating less anti-migrant sentiment through interaction and exposure (see Pettigrew & Tropp, 2006). For example, research on cross-border contact between Czechs and Germans highlights how more frequent interaction improves perceptions of each neighbor as well as the importance of local contexts such as cultural history that could moderate this relationship (Mirwaldt, 2010). I argue that the level of exposure to the physical institution of the border serves as another important contextual factor that could moderate the dynamic of contact on improving attitudes. Previous research provides some evidence that among the general criteria the public uses to determine whether migrants are ‘deserving’ of assistance, perceptions of identity and cultural similarity can play an important role (De Coninck and Matthijs, 2020; Carmel & Sojka, 2021). As such, the psychological distance between residents that enhanced fortifications like border walls create should thus lead to an increased perceived cultural dissimilarity that decreases respondents’ opinions of pro-immigration policy and migrants themselves. 
 
 Ultimately, I argue that in localities closer to low levels of border fortification, respondents will be more favorable towards immigration and migrants. With less fortifications comes a decrease in the symbolic ‘otherness’ of those who cross it (Jaramillo-Dent & Pérez-Rodríguez, 2021) as well as a decline in the psychological impediments that create feelings of cultural distance (Mutz & Simmons, 2022). This better enables the mechanism of greater contact and exposure to migrants to counteract larger anti-immigrant narratives or stereotypes that may be salient or otherwise impact respondents’ attitudes towards immigration and migration more generally. However, localities near borders with higher levels of fortifications will shape respondents’ attitudes towards immigrants negatively, resulting in negative attitudes towards immigration and migration. This hypothesis is summarized below: 
 
-  **H1: Respondents that live closer to higher levels of local border fortification will have more negative attitudes towards immigration and migration than those who live closer to lower levels of local border fortification. 
+  **H1: Respondents that live closer to higher levels of local border fortification will have more negative attitudes towards immigration and migration than those who live closer to lower levels of local border fortification.** 
 
-While respondents near areas with higher levels of border fortification are likely to feel enhanced cultural distance from immigrants entering the country, I argue that this effect is only exacerbated for people living further away that have even more limited exposure to the actual behavior and conduct of migrants. While other criteria matter for public opinion towards migrants’ deservingness such as perceptions of immigrants’ gratitude (attitude) or ability to contribute to the state they stay in (reciprocity) (De Coninck & Matthijs, 2020), I argue that enhanced fortification could also alter people’s perceptions of migrants’ reciprocity or attitude through larger narratives related to the criminality of immigrants.  
+## "Visibility" of the Border and its Subsequent Impact
 
-For example, in the U.S. context, Jaramillo-Dent and Pérez-Rodríguez (2021) find that coverage of migrant crossings past the U.S.-Mexico border wall creates an emphasis on the migrant’s behavior as criminal or dangerous. Despite narratives in the U.S. that immigrants pose a criminal threat and create instability, research shows that residents of border regions near the U.S. such as El Paso, Texas report feeling safe and don’t report insecurity because of their proximity to the border (Castañeda & Chiappetta, 2020). Previous research also indicates that the presence of deservingness cues can be extremely minimal yet strongly shape respondent attitudes towards providing welfare support (Aarøe & Petersen, 2014). If fortifications should create conditions that result in enhancing the ability of the state or anti-immigration parties to push narratives emphasizing ‘criminality’ of migrants, I argue that the enhanced likelihood of negative public narratives such as these should therefore decrease the likelihood for respondents perceiving immigrants as reciprocal or grateful for aid provided by the recipient state. Given these reasons, I derive my second hypothesis: 
+While respondents near areas with higher levels of border fortification are likely to feel enhanced cultural distance from immigrants entering the country, I argue that this effect is only exacerbated for people living further away that have even more limited exposure to the actual behavior and conduct of migrants. While other criteria matter for public opinion towards migrants’ deservingness such as perceptions of immigrants’ gratitude (attitude) or ability to contribute to the state they stay in (reciprocity) [@deconinck2020a], I argue that enhanced fortification could also alter people’s perceptions of migrants’ reciprocity or attitude through larger narratives related to the criminality of immigrants. Members of the public who live far from the border may have limited information or suffer from higher information costs to learn about the state of immigration policy and the nature of those who cross the border. Border fortifications such as fences and walls are convenient tools for the state to establish a tangible narrative and have it reinforced through media coverage and validating negative or harmful rhetoric that portrays immigration as a threat or immigration policy as broken. For instance, during the mass migration wave since 2015, campaign messages from the Hungarian government chose to take a more aggressive and anti-immigrant approach to the crisis: rather than provide humanitarian aid to refugees like many other European governments, the Hungarian government built a wall and began an anti-migration campaign across a wide variety of media sources [@bajomi-lazar2019]. While it is a challenge to parse the effects of fortifications from potential government controversy and rhetoric regarding immigration, this paper takes a first attempt at beginning to unravel this oftentimes dual-headed strategy by examining how border fortifications themselves influence public attitudes.     
 
-  **H2: As distance to the border increases, the impact of higher levels of overall border fortification on respondents’ attitudes towards immigration/migration becomes more negative. 
+For example, in the U.S. context, @jaramillo-dent2021 find that coverage of migrant crossings past the U.S.-Mexico border wall creates an emphasis on the migrant’s behavior as criminal or dangerous. Despite narratives in the U.S. that immigrants pose a criminal threat and create instability, research shows that residents of border regions near the U.S. such as El Paso, Texas report feeling safe and don’t report insecurity because of their proximity to the border [@castaneda2020]. In other words, how "visible" immigrants (and their effects on local populations) truly are without the lens of the media is increasingly limited for those who live further away from the border. I argue that regardless of whether border communities are safer or more dangerous than non-border communities, the limited first-hand visiblity of actual border policy and migrant behavior serves as a factor that allows for stereotypes and other heuristics to take hold.  Previous research also indicates that the presence of deservingness cues can be extremely minimal yet strongly shape respondent attitudes towards providing welfare support [@aaroe2014]. If fortifications should create conditions that result in enhancing the ability of the state or anti-immigration parties to push narratives emphasizing ‘criminality’ of migrants, I argue that the enhanced likelihood of negative public narratives such as these should therefore decrease the likelihood for respondents perceiving immigrants as reciprocal or grateful for aid provided by the recipient state. Given these reasons, I derive my second hypothesis: 
 
-Similar research has been conducted in an American context, examining how partisanship and proximity to the border interact to impact support for building a border wall with Mexico (Cortina, 2020). While conservative partisans farther away from the border are more supportive of a wall, conservatives closer to the border that have greater interaction with the reality and context of the place in reference, avoiding a separation of self from the subject of political debate or discussion (Cortina, 2020). I argue that this is especially applicable to immigration politics more generally. First, Immigration can play such a tangible role in people’s political conceptions that it represents its own political-ideological dimension capturing dynamics related to migration, national identity, and multiculturalism (O'Grady & Abou-Chadi, 2019). Immigration also serves as a politically useful topic for conservative partisans to exploit to acquire political capital and electoral success as part of a larger message to stoke right-wing populist support (Di Piazza & Soare, 2023; Kamenova & Pingaud, 2017). This can be frequently seen in prevalent right-wing populist executives of today. 
+  **H2: As distance to the border increases, the impact of higher levels of overall border fortification on respondents’ attitudes towards immigration/migration becomes more negative.** 
 
-In the case of Orbán’s Hungary, for instance, themes of the anti-immigration campaign from 2015, 2017, and 2019 ranged from migration as a looming threat facing Hungary to migration as a conspiracy by the likes of Hungarian-American billionaire George Soros or the President of the EU Commission (Bajomi-Lázár, 2019). Media outlets received or produced a barrage of anti-immigrant sentiment as a threat to Hungarian culture and physical safety, with opposition offering little resistance to these government-supported and oftentimes government-created messages (Bajomi-Lázár, 2019). These narrative messages can prove effective – in the case of income inequality, for example, implementation of a populist narrative of systemic unfairness results in higher demands for economic redistribution (Culpepper et al., 2024).  
+Similar research has been conducted in an American context, examining how partisanship and proximity to the border interact to impact support for building a border wall with Mexico [@cortina2020]. While conservative partisans farther away from the border are more supportive of a wall, conservatives closer to the border that have greater interaction with the reality and context of the place in reference, avoiding a separation of self from the subject of political debate or discussion [@cortina2020]. I argue that this is especially applicable to immigration politics more generally. First, Immigration can play such a tangible role in people’s political conceptions that it represents its own political-ideological dimension capturing dynamics related to migration, national identity, and multiculturalism [@ogrady2019]. Immigration also serves as a politically useful topic for conservative partisans to exploit to acquire political capital and electoral success as part of a larger message to stoke right-wing populist support [@dipiazza2023; @kamenova2017]. This can be frequently seen in prevalent right-wing populist executives of today. 
 
-In the case of Hungary and immigration, this propaganda campaign from the government did lead to tangible harms, where members of the public would attack or discriminate against refugees or those supporting refugees, normalizing xenophobic views especially among those who lived in rural areas where pro-government media dominated (Bajomi-Lázár, 2019). Because of this, immigration should be a salient issue that can create tangible attitude changes that are highly politicized and influenced substantially by one’s political ideology and leanings. As such, interaction at the border serves as a potential mediating factor that can shape the effectiveness of the tinted lens of ideology. For these reasons, I derive my final hypotheses: 
+In the case of Orbán’s Hungary, for instance, themes of the anti-immigration campaign from 2015, 2017, and 2019 ranged from migration as a looming threat facing Hungary to migration as a conspiracy by the likes of Hungarian-American billionaire George Soros or the President of the EU Commission [@bajomi-lazar2019]. Media outlets received or produced a barrage of anti-immigrant sentiment as a threat to Hungarian culture and physical safety, with opposition offering little resistance to these government-supported and oftentimes government-created messages [@bajomi-lazar2019]. These narrative messages can prove effective – in the case of income inequality, for example, implementation of a populist narrative of systemic unfairness results in higher demands for economic redistribution [@culpepper2024].  
 
-  **H3: As distance to the nearest border increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative. 
+In the case of Hungary and immigration, this propaganda campaign from the government did lead to tangible harms, where members of the public would attack or discriminate against refugees or those supporting refugees, normalizing xenophobic views especially among those who lived in rural areas where pro-government media dominated [@bajomi-lazar2019]. Because of this, immigration should be a salient issue that can create tangible attitude changes that are highly politicized and influenced substantially by one’s political ideology and leanings. As such, interaction at the border serves as a potential mediating factor that can shape the effectiveness of the tinted lens of ideology. For these reasons, I derive my final hypotheses: 
 
-  **H4: As overall border fortification increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative. 
+  **H3: As distance to the nearest border increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative.**
+
+  **H4: As overall border fortification increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative.** 
 
 # Research Design
-Test
-
-# Results
-Test
-
-```{r Random Effects Logistic Regression (random intercept for country-level data), include=FALSE}
-
-m1 <- glmer(DV ~ IV1 + IV2 + IV3 + IV4 + ... +
-    (1 | COUNTRY), data = DATA, family = binomial)
-    
-se <- sqrt(diag(vcov(m1)))
-
----
-# table of estimates with 95% CI
----
-(tab <- cbind(Est = fixef(m1), LL = fixef(m1) - 1.96 * se, UL = fixef(m1) + 1.96 *
-    se))
----
-# Odds Ratios of the Table
----
-exp(tab)
-
----
-  #Dot-and-whisker plot
----
-  
-  m1 <- lm(mpg ~ wt + cyl + disp + gear, data = mtcars)
-
-  dwplot(list(m1, m2, m3),
-       vline = geom_vline(
-           xintercept = 0,
-           colour = "grey60",
-           linetype = 2
-       ),
-       vars_order = c("am", "cyl", "disp", "gear", "hp", "wt"),
-       model_order = c("Model 2", "Model 1", "Model 3")
-       )  |>  # plot line at zero _behind_coefs
-    relabel_predictors(
-        c(
-            am = "Manual",
-            cyl = "Cylinders",
-            disp = "Displacement",
-            wt = "Weight",
-            gear = "Gears",
-            hp = "Horsepower"
-        )
-    ) +
-    theme_bw(base_size = 4) + 
-    # Setting `base_size` for fit the theme
-    # No need to set `base_size` in most usage
-    xlab("Coefficient Estimate") + ylab("") +
-    geom_vline(xintercept = 0,
-               colour = "grey60",
-               linetype = 2) +
-    ggtitle("Predicting Gas Mileage") +
-    theme(
-        plot.title = element_text(face = "bold"),
-        legend.position = c(0.007, 0.01),
-        legend.justification = c(0, 0),
-        legend.background = element_rect(colour = "grey80"),
-        legend.title = element_blank()
-    ) 
-# Transform cyl to factor variable in the data
-m_factor <-
-    lm(mpg ~ wt + cyl + disp + gear, data = mtcars |> mutate(cyl = factor(cyl)))
-
-# Remove all model estimates that start with cyl*
-m_factor_df <- broom::tidy(m_factor) |>
-    filter(!grepl('cyl*', term))
-
-dwplot(m_factor_df)
 
 
-```
+#Data Description
 
-
----
-
-# Discussion and Conclusion
-Test
-
----
-# This is a comment, set off with --- and started with #.  Comments are good for notes to self that you don't want to show up in the output.  Below is LaTeX code for a page break.
----
-
-
-
----
 
 ```{r Fuzzy Matching Process, include=FALSE}
 
@@ -294,6 +207,164 @@ result6 <- stringdist_join(a_fuzzy, b_split[["6"]],
   group_by(District_Name) %>%
   slice_min(order_by = dist, n = 1)
 ```
+
+# Results
+
+
+```{r Random Effects Logistic Regression (random intercept for country-level data), include=FALSE}
+
+m1 <- glmer(DV ~ IV1 + IV2 + IV3 + IV4 + ... +
+    (1 | COUNTRY), data = DATA, family = binomial)
+    
+se <- sqrt(diag(vcov(m1)))
+
+---
+# table of estimates with 95% CI
+---
+(tab <- cbind(Est = fixef(m1), LL = fixef(m1) - 1.96 * se, UL = fixef(m1) + 1.96 *
+    se))
+---
+# Odds Ratios of the Table
+---
+exp(tab)
+
+---
+  #Dot-and-whisker plot
+---
+  
+  m1 <- lm(mpg ~ wt + cyl + disp + gear, data = mtcars)
+
+  dwplot(list(m1, m2, m3),
+       vline = geom_vline(
+           xintercept = 0,
+           colour = "grey60",
+           linetype = 2
+       ),
+       vars_order = c("am", "cyl", "disp", "gear", "hp", "wt"),
+       model_order = c("Model 2", "Model 1", "Model 3")
+       )  |>  # plot line at zero _behind_coefs
+    relabel_predictors(
+        c(
+            am = "Manual",
+            cyl = "Cylinders",
+            disp = "Displacement",
+            wt = "Weight",
+            gear = "Gears",
+            hp = "Horsepower"
+        )
+    ) +
+    theme_bw(base_size = 4) + 
+    # Setting `base_size` for fit the theme
+    # No need to set `base_size` in most usage
+    xlab("Coefficient Estimate") + ylab("") +
+    geom_vline(xintercept = 0,
+               colour = "grey60",
+               linetype = 2) +
+    ggtitle("Predicting Gas Mileage") +
+    theme(
+        plot.title = element_text(face = "bold"),
+        legend.position = c(0.007, 0.01),
+        legend.justification = c(0, 0),
+        legend.background = element_rect(colour = "grey80"),
+        legend.title = element_blank()
+    ) 
+  
+  
+# Transform cyl to factor variable in the data
+m_factor <-
+    lm(mpg ~ wt + cyl + disp + gear, data = mtcars |> mutate(cyl = factor(cyl)))
+
+# Remove all model estimates that start with cyl*
+m_factor_df <- broom::tidy(m_factor) |>
+    filter(!grepl('cyl*', term))
+
+dwplot(m_factor_df)
+
+
+#Predicted Probabilities for Output
+
+summary(DATA$VARIABLE)
+
+jvalues <- with(DATA, seq(from = min(VARIABLE), to = max(VARIABLE), length.out = 100))
+
+# calculate predicted probabilities and store in a list
+pp <- lapply(jvalues, function(j) {
+    tmpdat$VARIABLE <- j
+    predict(m, newdata = tmpdat, type = "response")
+})
+
+# average marginal predicted probability across a few different Lengths of
+# VARIABLE
+sapply(pp[c(SET POINTS ALONG IV HERE (e.g. 10, 20. 30, 40))], mean)
+
+# get the means with lower and upper quartiles
+plotdat <- t(sapply(pp, function(x) {
+    c(M = mean(x), quantile(x, c(0.25, 0.75)))
+}))
+
+# add in LengthofStay values and convert to data frame
+plotdat <- as.data.frame(cbind(plotdat, jvalues))
+
+# better names and show the first few rows
+colnames(plotdat) <- c("PredictedProbability", "Lower", "Upper", "VARIABLE")
+head(plotdat)
+
+
+# plot average marginal predicted probabilities with their lower/upper quartiles (the range in which 50 percent of the predicted probabilities fell)
+ggplot(plotdat, aes(x = LengthofStay, y = PredictedProbability)) + geom_linerange(aes(ymin = Lower,
+    ymax = Upper)) + geom_line(size = 2) + ylim(c(0, 1))
+
+#plot average marginal predicted probabilities over another ordinal/categorical variable
+
+# calculate predicted probabilities and store in a list
+biprobs <- lapply(levels(DATA$CATEGORICAL VARIABLE), function(stage) {
+  tmpdat$CATEGORICAL VARIABLE[] <- stage
+  lapply(jvalues, function(j) {
+    tmpdat$VARIABLE <- j
+    predict(m, newdata = tmpdat, type = "response")
+  })
+})
+
+# get means and quartiles for all jvalues for each level of CancerStage
+plotdat2 <- lapply(biprobs, function(X) {
+  temp <- t(sapply(X, function(x) {
+    c(M=mean(x), quantile(x, c(.25, .75)))
+  }))
+  temp <- as.data.frame(cbind(temp, jvalues))
+  colnames(temp) <- c("PredictedProbability", "Lower", "Upper", "LengthofStay")
+  return(temp)
+})
+
+# collapse to one data frame
+plotdat2 <- do.call(rbind, plotdat2)
+
+# add cancer stage
+plotdat2$CancerStage <- factor(rep(levels(DATA$CATEGORICAL VARIABLE), each = length(jvalues)))
+
+ggplot(plotdat2, aes(x = VARIABLE, y = PredictedProbability)) +
+  geom_ribbon(aes(ymin = Lower, ymax = Upper, fill = CATEGORICAL VARIABLE), alpha = .15) +
+  geom_line(aes(colour = CATEGORICAL VARIABLE), size = 2) +
+  ylim(c(0, 1)) + facet_wrap(~  CATEGORICAL VARIABLE)
+
+
+
+
+```
+
+
+---
+
+# Discussion and Conclusion
+Test
+
+---
+# This is a comment, set off with --- and started with #.  Comments are good for notes to self that you don't want to show up in the output.  Below is LaTeX code for a page break.
+---
+
+
+
+---
+
 # test
 
 ---
