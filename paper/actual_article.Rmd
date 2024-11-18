@@ -23,22 +23,172 @@ linkcolor: black
 endnote: no
 ---
 
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+r = getOption("repos")
+r["CRAN"] = "http://cran.us.r-project.org"
+options(repos = r)
+
 # load all the packages you will use below 
 library(dotwhisker)
 library(tidyverse)
+library(dplyr)
+
+
+if(!require(ggplot2)) install.packages(install.packages("ggplot2"))
+if(!require(GGally)) install.packages(install.packages("GGally"))
+if(!require(reshape2)) install.packages(install.packages("reshape2"))
+if(!require(lme4)) install.packages(install.packages("lme4"))
+if(!require(compiler)) install.packages(install.packages("compiler"))
+
+if(!require(parallel)) install.packages(install.packages("parallel"))
+if(!require(boot)) install.packages(install.packages("boot"))
+if(!require(lattice)) install.packages(install.packages("lattice"))
+
+library(ggplot2)
+library(GGally)
+library(reshape2)
+library(lme4)
+library(compiler)
+library(parallel)
+library(boot)
+library(lattice)
+
 ```
 
-# Introduction to RMarkdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r mtcars}
-summary(mtcars)
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
 ```
+
+
+# Introduction
+
+This is a test.
+
+# Literature Review
+Test.
+
+
+## Topic 1
+
+Test
+
+### Topic 2
+
+Test
+
+# Theory
+
+I argue that border fortifications increase the psychological isolation of one nation from another for individuals living nearby, exacerbating the perceived cultural distance between migrant and resident. This paper draws inspiration and applies aspects of Mutz and Simmons’ (2022) theory which argues that walls create psychological distance between residents of either side of the border, creating negative inferences about the relationship between both countries. However, this paper extends the theory further by arguing that walls and fortifications more generally serve as an explicit reminder of state power and a visual, tangible, narrative that can enhance the characterization of migrants as ills on society.   
+
+In contexts with little border fortification, intergroup contact could help provide information and can circumvent convenient heuristics such as stereotypes and media narratives, complicating residents’ thoughts and creating less anti-migrant sentiment through interaction and exposure (see Pettigrew & Tropp, 2006). For example, research on cross-border contact between Czechs and Germans highlights how more frequent interaction improves perceptions of each neighbor as well as the importance of local contexts such as cultural history that could moderate this relationship (Mirwaldt, 2010). I argue that the level of exposure to the physical institution of the border serves as another important contextual factor that could moderate the dynamic of contact on improving attitudes. Previous research provides some evidence that among the general criteria the public uses to determine whether migrants are ‘deserving’ of assistance, perceptions of identity and cultural similarity can play an important role (De Coninck and Matthijs, 2020; Carmel & Sojka, 2021). As such, the psychological distance between residents that enhanced fortifications like border walls create should thus lead to an increased perceived cultural dissimilarity that decreases respondents’ opinions of pro-immigration policy and migrants themselves. 
+
+Ultimately, I argue that in localities closer to low levels of border fortification, respondents will be more favorable towards immigration and migrants. With less fortifications comes a decrease in the symbolic ‘otherness’ of those who cross it (Jaramillo-Dent & Pérez-Rodríguez, 2021) as well as a decline in the psychological impediments that create feelings of cultural distance (Mutz & Simmons, 2022). This better enables the mechanism of greater contact and exposure to migrants to counteract larger anti-immigrant narratives or stereotypes that may be salient or otherwise impact respondents’ attitudes towards immigration and migration more generally. However, localities near borders with higher levels of fortifications will shape respondents’ attitudes towards immigrants negatively, resulting in negative attitudes towards immigration and migration. This hypothesis is summarized below: 
+
+  **H1: Respondents that live closer to higher levels of local border fortification will have more negative attitudes towards immigration and migration than those who live closer to lower levels of local border fortification. 
+
+While respondents near areas with higher levels of border fortification are likely to feel enhanced cultural distance from immigrants entering the country, I argue that this effect is only exacerbated for people living further away that have even more limited exposure to the actual behavior and conduct of migrants. While other criteria matter for public opinion towards migrants’ deservingness such as perceptions of immigrants’ gratitude (attitude) or ability to contribute to the state they stay in (reciprocity) (De Coninck & Matthijs, 2020), I argue that enhanced fortification could also alter people’s perceptions of migrants’ reciprocity or attitude through larger narratives related to the criminality of immigrants.  
+
+For example, in the U.S. context, Jaramillo-Dent and Pérez-Rodríguez (2021) find that coverage of migrant crossings past the U.S.-Mexico border wall creates an emphasis on the migrant’s behavior as criminal or dangerous. Despite narratives in the U.S. that immigrants pose a criminal threat and create instability, research shows that residents of border regions near the U.S. such as El Paso, Texas report feeling safe and don’t report insecurity because of their proximity to the border (Castañeda & Chiappetta, 2020). Previous research also indicates that the presence of deservingness cues can be extremely minimal yet strongly shape respondent attitudes towards providing welfare support (Aarøe & Petersen, 2014). If fortifications should create conditions that result in enhancing the ability of the state or anti-immigration parties to push narratives emphasizing ‘criminality’ of migrants, I argue that the enhanced likelihood of negative public narratives such as these should therefore decrease the likelihood for respondents perceiving immigrants as reciprocal or grateful for aid provided by the recipient state. Given these reasons, I derive my second hypothesis: 
+
+  **H2: As distance to the border increases, the impact of higher levels of overall border fortification on respondents’ attitudes towards immigration/migration becomes more negative. 
+
+Similar research has been conducted in an American context, examining how partisanship and proximity to the border interact to impact support for building a border wall with Mexico (Cortina, 2020). While conservative partisans farther away from the border are more supportive of a wall, conservatives closer to the border that have greater interaction with the reality and context of the place in reference, avoiding a separation of self from the subject of political debate or discussion (Cortina, 2020). I argue that this is especially applicable to immigration politics more generally. First, Immigration can play such a tangible role in people’s political conceptions that it represents its own political-ideological dimension capturing dynamics related to migration, national identity, and multiculturalism (O'Grady & Abou-Chadi, 2019). Immigration also serves as a politically useful topic for conservative partisans to exploit to acquire political capital and electoral success as part of a larger message to stoke right-wing populist support (Di Piazza & Soare, 2023; Kamenova & Pingaud, 2017). This can be frequently seen in prevalent right-wing populist executives of today. 
+
+In the case of Orbán’s Hungary, for instance, themes of the anti-immigration campaign from 2015, 2017, and 2019 ranged from migration as a looming threat facing Hungary to migration as a conspiracy by the likes of Hungarian-American billionaire George Soros or the President of the EU Commission (Bajomi-Lázár, 2019). Media outlets received or produced a barrage of anti-immigrant sentiment as a threat to Hungarian culture and physical safety, with opposition offering little resistance to these government-supported and oftentimes government-created messages (Bajomi-Lázár, 2019). These narrative messages can prove effective – in the case of income inequality, for example, implementation of a populist narrative of systemic unfairness results in higher demands for economic redistribution (Culpepper et al., 2024).  
+
+In the case of Hungary and immigration, this propaganda campaign from the government did lead to tangible harms, where members of the public would attack or discriminate against refugees or those supporting refugees, normalizing xenophobic views especially among those who lived in rural areas where pro-government media dominated (Bajomi-Lázár, 2019). Because of this, immigration should be a salient issue that can create tangible attitude changes that are highly politicized and influenced substantially by one’s political ideology and leanings. As such, interaction at the border serves as a potential mediating factor that can shape the effectiveness of the tinted lens of ideology. For these reasons, I derive my final hypotheses: 
+
+  **H3: As distance to the nearest border increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative. 
+
+  **H4: As overall border fortification increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative. 
+
+# Research Design
+Test
+
+# Results
+Test
+
+```{r Random Effects Logistic Regression (random intercept for country-level data), include=FALSE}
+
+m1 <- glmer(DV ~ IV1 + IV2 + IV3 + IV4 + ... +
+    (1 | COUNTRY), data = DATA, family = binomial)
+    
+se <- sqrt(diag(vcov(m1)))
+
+---
+# table of estimates with 95% CI
+---
+(tab <- cbind(Est = fixef(m1), LL = fixef(m1) - 1.96 * se, UL = fixef(m1) + 1.96 *
+    se))
+---
+# Odds Ratios of the Table
+---
+exp(tab)
+
+---
+  #Dot-and-whisker plot
+---
+  
+  m1 <- lm(mpg ~ wt + cyl + disp + gear, data = mtcars)
+
+  dwplot(list(m1, m2, m3),
+       vline = geom_vline(
+           xintercept = 0,
+           colour = "grey60",
+           linetype = 2
+       ),
+       vars_order = c("am", "cyl", "disp", "gear", "hp", "wt"),
+       model_order = c("Model 2", "Model 1", "Model 3")
+       )  |>  # plot line at zero _behind_coefs
+    relabel_predictors(
+        c(
+            am = "Manual",
+            cyl = "Cylinders",
+            disp = "Displacement",
+            wt = "Weight",
+            gear = "Gears",
+            hp = "Horsepower"
+        )
+    ) +
+    theme_bw(base_size = 4) + 
+    # Setting `base_size` for fit the theme
+    # No need to set `base_size` in most usage
+    xlab("Coefficient Estimate") + ylab("") +
+    geom_vline(xintercept = 0,
+               colour = "grey60",
+               linetype = 2) +
+    ggtitle("Predicting Gas Mileage") +
+    theme(
+        plot.title = element_text(face = "bold"),
+        legend.position = c(0.007, 0.01),
+        legend.justification = c(0, 0),
+        legend.background = element_rect(colour = "grey80"),
+        legend.title = element_blank()
+    ) 
+# Transform cyl to factor variable in the data
+m_factor <-
+    lm(mpg ~ wt + cyl + disp + gear, data = mtcars |> mutate(cyl = factor(cyl)))
+
+# Remove all model estimates that start with cyl*
+m_factor_df <- broom::tidy(m_factor) |>
+    filter(!grepl('cyl*', term))
+
+dwplot(m_factor_df)
+
+
+```
+
+
+---
+
+# Discussion and Conclusion
+Test
 
 ---
 # This is a comment, set off with --- and started with #.  Comments are good for notes to self that you don't want to show up in the output.  Below is LaTeX code for a page break.
@@ -48,7 +198,7 @@ summary(mtcars)
 
 ---
 
-```{}
+```{r Fuzzy Matching Process, include=FALSE}
 
 getwd()
 setwd("/Users/tdain/OneDrive/Desktop/R Data/Borders and Public Opinion Paper")
@@ -56,28 +206,93 @@ setwd("/Users/tdain/OneDrive/Desktop/R Data/Borders and Public Opinion Paper")
 
 a <- read.csv("public-opinion-paper/data/centroid_border_distances.csv")
 
-b <- read.csv("C:/Users/tdain/OneDrive/Desktop/Stata Data/Graduate Work/Borders and Public Opinion Paper/data/province_key.csv")
+a_fuzzy <- data.frame(a)
 
-install.packages("tinytex")
+b <- read.csv("C:/Users/tdain/OneDrive/Desktop/Stata Data/Graduate Work/Borders and Public Opinion Paper/data/WVS_province_key.csv")
+b_fuzzy <- data.frame(b)
+names(b) <- c("District_Name")
+names(b_fuzzy) <- c("District_Name")
+b_split <- split(b_fuzzy, (seq(nrow(b_fuzzy))-1) %/% 50000) 
 
-library(stringdist)
-d <- expand.grid(a$District_Name,b$Name_1) # Distance matrix in long form
-names(d) <- c("a_name","b_name")
-d$dist <- stringdist(d$a_name,d$b_name, method="jw") # String edit distance (use your favorite function here)
 
-library(fuzzyjoin); library(dplyr);
+if(!require(tinytex)) install.packages(install.packages("tinytex"))
+if(!require(fuzzyjoin)) install.packages(install.packages("fuzzyjoin"))
+if(!require(dplyr)) install.packages(install.packages("dplyr"))
+if(!require(stringdist)) install.packages(install.packages("stringdist"))
+if(!require(vctrs)) install.packages(install.packages("vctrs"))
 
-stringdist_join(a, b, 
-                by = "name",
+library(fuzzyjoin); library(dplyr); library(stringdist)
+
+
+result0 <- stringdist_join(a_fuzzy, b_split[["0"]], 
+                by = "District_Name",
                 mode = "left",
                 ignore_case = FALSE, 
                 method = "jw", 
                 max_dist = 99, 
                 distance_col = "dist") %>%
-  group_by(name.x) %>%
+  group_by(District_Name) %>%
   slice_min(order_by = dist, n = 1)
 
+result1 <- stringdist_join(a_fuzzy, b_split[["1"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
 
+result2 <- stringdist_join(a_fuzzy, b_split[["2"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
+
+result3 <- stringdist_join(a_fuzzy, b_split[["3"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
+
+result4 <- stringdist_join(a_fuzzy, b_split[["4"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
+
+result5 <- stringdist_join(a_fuzzy, b_split[["5"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
+
+result6 <- stringdist_join(a_fuzzy, b_split[["6"]], 
+                by = "District_Name",
+                mode = "left",
+                ignore_case = FALSE, 
+                method = "jw", 
+                max_dist = 99, 
+                distance_col = "dist") %>%
+  group_by(District_Name) %>%
+  slice_min(order_by = dist, n = 1)
 ```
 # test
 
@@ -85,42 +300,15 @@ stringdist_join(a, b,
 \pagebreak 
 ## Including Plots
 
-You can also embed plots, for example:
+Test
+---
 
-```{r dotwhisker_plot, fig.width = 7, fig.height = 4, warning = FALSE, message = FALSE, echo = FALSE, fig.cap="\\label{fig:dotwhisker_plot}Dot-and-Whisker Plot Example"}
-m1 <- lm(mpg ~ wt + cyl + disp + gear, data = mtcars)
-m2 <- update(m1, . ~ . + hp) # add another predictor
-m3 <- update(m2, . ~ . + am) # and another 
 
-dwplot(list(m1, m2, m3),
-       vline = geom_vline(xintercept = 0, colour = "grey60", linetype = 2)) %>% # plot line at zero _behind_ coefs
-    relabel_predictors(c(wt = "Weight",                       
-                         cyl = "Cylinders", 
-                         disp = "Displacement", 
-                         hp = "Horsepower", 
-                         gear = "Gears", 
-                         am = "Manual")) +
-     theme_bw() + xlab("Coefficient Estimate") + ylab("") +
-     geom_vline(xintercept = 0, colour = "grey60", linetype = 2) +
-     ggtitle("Predicting Gas Mileage") +
-     theme(plot.title = element_text(face="bold"),
-           legend.position = c(0.007, 0.01),
-           legend.justification = c(0, 0), 
-           legend.background = element_rect(colour="grey80"),
-           legend.title = element_blank()) 
-```
 
-Figure \ref{fig:dotwhisker_plot} is a plot made using the \texttt{dotwhisker} package [@Solt2015c]. Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+---
+
 
 ## Citations
-Want to cite something?
-
-1. Find your cite key in your bib file.
-1. Put an @ before it, like @Solt2017, or whatever it is
-1. @Solt2017 creates an in-text citation
-1. [@Herndon2014] creates a parenthetical citation
-
-As @Gelman2014 note, the garden of forking paths can pose problems for researchers even when they are acting in good faith.
 
 ## Other Common Things
 
