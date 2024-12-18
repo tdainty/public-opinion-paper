@@ -1,5 +1,5 @@
 ---
-output: 
+output:
   pdf_document:
     citation_package: natbib
     keep_tex: false
@@ -12,7 +12,7 @@ author:
 - name: Thomas Dainty
   affiliation: University of Iowa
 abstract: "In recent years, border fortifications and barriers have been established or strengthened to counter perceived threats from mass migration. While recent work has focused on the factors that impact opinions on immigration, this study explores the role of survey respondent's geographic proximity to the borders as a means to test how potentially enhanced personal exposure to tangible state policies such as border fortifications as well as greater personal exposure to migrants themselves impacts respondents subsequent opinion on immigrants, immigration policy, and nationalistic attitudes. Does geographic proximity to the border impact public opinion on immigration policy? Do visible state policies such as border fortifications shape opinion? Respondents with little personal exposure to state borders and those who cross them may be more susceptible to state narratives or negative stereotypes of migrants as an Otherizing informational heuristic, impacting their opinion on immigration policy. However, those who live near the border ought to be less susceptible to such narratives because of personal experience related to the subject matter, resulting in greater favorability towards migrants and pro-immigration policy. I argue that border fortifications serve as a mediating factor for this relationship, with greater fortifications increasing perceived cultural distance between the resident and migrant, reducing the benefits of intergroup contact and furthering the gap in immigrant attitudes between those who live near the border and those who live far from it. INSERT FINDINGS HERE"
-keywords: "these, always seem silly, to me, given google, but regardless"
+keywords: "borders, public opinion, immigration policy, immigration attitudes"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 12pt
 spacing: double
@@ -24,76 +24,66 @@ endnote: no
 ---
 
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-r = getOption("repos")
-r["CRAN"] = "http://cran.us.r-project.org"
-options(repos = r)
-
-# load all the packages you will use below 
-library(dotwhisker)
-library(tidyverse)
-library(dplyr)
-
-
-if(!require(ggplot2)) install.packages(install.packages("ggplot2"))
-if(!require(GGally)) install.packages(install.packages("GGally"))
-if(!require(reshape2)) install.packages(install.packages("reshape2"))
-if(!require(lme4)) install.packages(install.packages("lme4"))
-if(!require(compiler)) install.packages(install.packages("compiler"))
-
-if(!require(parallel)) install.packages(install.packages("parallel"))
-if(!require(boot)) install.packages(install.packages("boot"))
-if(!require(lattice)) install.packages(install.packages("lattice"))
-
-library(ggplot2)
-library(GGally)
-library(reshape2)
-library(lme4)
-library(compiler)
-library(parallel)
-library(boot)
-library(lattice)
-options(tinytex.verbose = TRUE)
-
-```
-
-
 # Introduction
 
-This is a test.
+•	Migration is an increasingly relevant issue (WMR, 2024)
+•	281 million migrants globally
+•	8,500+ deaths during migrant travel in 2023
+•	Fortifications have increased since the end of the Cold War (Linebarger & Braithwaite, 2020)
+•	Fortifications are in large response to migration, but have little impact as an actual deterrent for migration [@avdan2023]. Border fences have not resulted in an impact on refugee flows [@avdan2023]. 
+•	Public opinion can influence national immigration policy when there is large migrant and refugee populations already existing in the country (Böhmelt, 2021).
+•	How do fortifications impact domestic audiences’ views on state immigration policy and on migrants themselves?
 
 # Literature Review
-Test.
 
+##Contact Theory and Migration
 
-## Topic 1
+  The broad argument of contact theory or the ‘contact hypothesis’ is straightforward: that prejudice can be reduced, and that understanding can be increased through contact between majority and minority groups [@pettigrew2006; @allport1970]. For instance, greater intergroup contact can bolster trust and forgiveness for past wrongs by reducing anxiety and improving empathy and can result in effects that generalize beyond the immediate outgroup members to the larger outgroup [@pettigrew2011]. Evidence for intergroup contact theory is generally robust in the field of psychology [@pettigrew2006; @paluck2019; @pettigrew2011), but further work needs to be done on examining how racial/ethnic prejudice is impacted by intergroup contact [@paluck2019]. Through investigating immigration attitudes, especially those on immigrants themselves rather than policy, this paper contributes to the literature on intergroup contact theory.
 
-Test
+  A country-level examination finds potential evidence of contact theory, in which a higher percentage of immigrants in the country results in sharp declines in support for anti-immigration policy [@young2018]. However, this proposed trend is not consistently fund. For example, @basile2020 shows that identity and ideological orientations influence public attitudes towards EU migration and that overestimation of the immigrant population in the EU increases hostility towards solidarity policy measures. Additionally, @czymara2021 shows how anti-refugee sentiment did not decline with a decline in the actual amount of refugees – rather, more negative sentiments are expected in times of demographic change. This is further shown in the US, where evidence shows that contact with ethnic minorities bolsters support for amnesty policies [@ayers2009]. One moderating factor for this dynamic, however, may be political sophistication – those with greater comprehension of news or mass-mediated events are less likely to be impacted by neighborhood exposure to non-Western immigrants [@danckert2017].
 
-### Topic 2
+  Following a call for further testing to investigate this potential mechanism shaping immigration attitudes [@young2018] and evidence that suggests that views on immigration may vary among different localities [@arvanitidis2021], this paper leverages subnational survey data to provide further examination of how local communities’ potential exposure to both migrants and highly visible immigration policy decisions such as border fortifications shapes their subsequent attitudes on immigration policy and stigma towards migrants or foreign workers.
 
-Test
+##Economic Factors and Immigration Attitudes:
+
+  One major focus of literature on immigration attitudes has been the role of economic security and the impact of the economy or wealth at-large on attitudes. While this mechanism has received considerable attention, it has also been met with conflictual findings. For instance, evidence shows how individuals with lower levels of income are less supportive of immigration [@arvanitidis2021; @young2018; @hoskin1983], although this evidence does not come without conflicting results in other contexts, such as the U.S. [@binder1997]. @hoskin1983 provided some initial evidence on the role of materialist and post-materialist values, impacted by income and education, impacting immigration attitudes. This has only been expanded on as the literature has developed. 
+  
+  @burns2000, for instance, shows how individual economic fears could be a direct influence on attitudes through fears of immigrant labor ‘replacing’ them. However, @hainmueller2014 shows that national-level economic factors play a meaningful role rather than individual circumstances. Similarly, other research highlights national policy choices as meaningful influences. For example, @artiles2014 finds evidence that strong trade unions and social protection policies result in greater levels of integration of immigrants through reducing social inequality and the risk of poverty in the population. 
+
+##The Role of Culture, Race/Ethnicity, and Prejudice:
+
+  While economic security is a likely influence, others argue and find less conflictual evidence for the role of cultural values, perceived differences, and prejudice in impacting attitudes [@heath2020; @heath2020a]. For instance, while @burns2000 find some evidence that individual economic fears impact attitudes, they also find that racial and ethnic stereotypical thinking about the work ethic and intelligence of other groups is a strong influence on individual attitudes towards immigration policy. @espenshade1993 finds evidence supporting the role of cultural affinity between respondents and undocumented migrants in impacting attitudes towards illegal immigration and migrants. Similarly, @davidov2020 finds that the role of individual values in shaping immigration attitudes is stronger in countries that have higher levels of intellectual autonomy and weaker in countries that have higher levels of cultural embeddedness. Perceived differences between people may also play a role. For example, @ayers2009 highlights the impact of racial differences in the US in shaping opinion toward migration. In a subsample of EU countries, @deconinck2020 finds that migrants with the same ethnicity, from rich countries, or other European countries receive higher levels of support than migrants who do not have such qualities.
+  Taken together, the amount of evidence highlighting the role of both economic and cultural factors in shaping public opinion on immigration ultimately emphasizes the importance of both of these factors. Relatedly, @solano2023 finds evidence that highlights the role of both economic factors like GDP per capita and welfare expenditure as well as political ideology in impacting policymakers actions on migrant integration policies. This paper highlights the role of border fortifications as a visible policy that could respond to both economic and cultural qualms. Border fortifications and border walls specifically have been in large response to both heightened levels of migrants [@avdan2023], as well as concerns related to economic security [@carter2017], and as such, serve as a visible reminder of both economic disparity between countries on either side of the border as well as perceived cultural difference and dissimilarity. 
+
+##Additional Influences:
+
+	While much of the literature focuses on economic or cultural factors that impact immigration attitudes, other impacts have also been shown to play a meaningful role in shaping opinions toward immigration. First, @davidov2020 emphasizes the role of individual values such as universalism or conservatism in impacting the degree to which respondents view immigration as a threat. Second, perceived threats to human security can also impact attitudes towards immigration. For instance, terrorist attacks are shown to bolster support for more restrictionist immigration policy [@young2018]. Third, the particularity of whether migrants are ‘immigrants’ or ‘refugees’ can impact attitudes regarding these groups, where refugees receive higher levels of support than immigrants [@deconinck2020]. Additionally, public opinion may be further shaped by existing policy.
+Fourth, some evidence of thermostatic public opinion has been found for immigration policy. For example, in the UK, more liberal and less restrictive immigration policies of the late 90s and early 2000s saw strong public demand for restriction in the late 2000s and onward [@ford2015]. The responsiveness of the government to these demands, however, is generally found to be weak. @ford2015 shows how governments like the UK have a tradeoff between responding to demands for less immigration while also maintaining competitiveness for high-demand and skilled migrants. Relatedly, @morales2015 shows that rather than the strength of anti-immigrant parties influencing the gap in opinion and policy, it is the salience of the issue, media coverage, and public debate that results in policy change. I argue that the saliency of immigration should vary at a subnational level as well – whether people are closer to the very borders that migrants are entering from should impact the perceived importance of the issue as well as influence perceptions of coverage and public debate. This latter argument is discussed further below.
+
+  A considerable amount of literature shows how the public may use heuristics, narratives, and frames to form opinions when information costs are high [@mondak1993; @rugeley2012; @petersen2009; @aaroe2014; @culpepper2024]. Racial and ethnic stereotypes may serve as one such heuristic because of how they can impact information processing and decision-making surrounding policies influencing those that are impacted [@burns2000]. Even if the public is not as uninformed on immigration as may be traditionally assumed [@lahav2004], this paper argues that tools like stereotypes, narratives, and heuristics can be influenced by state policy (in)validating such tools. Border fortifications serve as a useful tool to fuel or spark anti-immigrant narratives and anti-immigrant stereotypes, whether it be through validating concerns of migrant criminality or highlighting cultural and/or economic dissimilarity [@jaramillo-dent2021; @mutz2022; @carter2017]. I delve into this theory further below.
 
 # Theory
 
-This paper draws inspiration and applies aspects of Mutz and Simmons’ (2022) theory which argues that walls create psychological distance between residents of either side of the border, creating negative inferences about the relationship between both countries. However, this paper extends the theory further by arguing that walls and fortifications more generally serve as an explicit reminder of state power and a visual, tangible, narrative that can create or exacerbate negative attitudes towards immigrants. I argue this for two reasons. First, I argue that border fortifications increase the psychological isolation of one nation from another for individuals living nearby, exacerbating the perceived cultural distance between migrant and resident. Second, I argue that the visible, tangible, reality of border fortifications serves as a heuristic to those living further away from the border that the public may use to form attitudes and opinions on immigrants and immigration policy.
+  This paper draws inspiration and applies aspects of @mutz2022's theory which argues that walls create psychological distance between residents of either side of the border, creating negative inferences about the relationship between both countries. However, this paper extends the theory further by arguing that walls and fortifications more generally serve as an explicit reminder of state power and a visual, tangible, narrative that can create or exacerbate negative attitudes towards immigrants. I argue this for two reasons. First, I argue that border fortifications increase the psychological isolation of one nation from another for individuals living nearby, exacerbating the perceived cultural distance between migrant and resident. Second, I argue that the visible, tangible, reality of border fortifications serves as a heuristic to those living further away from the border that the public may use to form attitudes and opinions on immigrants and immigration policy.
 
-In contexts with little border fortification, intergroup contact could help provide information and can circumvent convenient heuristics such as stereotypes and media narratives, complicating residents’ thoughts and creating less anti-migrant sentiment through interaction and exposure (see Pettigrew & Tropp, 2006). For example, research on cross-border contact between Czechs and Germans highlights how more frequent interaction improves perceptions of each neighbor as well as the importance of local contexts such as cultural history that could moderate this relationship (Mirwaldt, 2010). I argue that the level of exposure to the physical institution of the border serves as another important contextual factor that could moderate the dynamic of contact on improving attitudes. Previous research provides some evidence that among the general criteria the public uses to determine whether migrants are ‘deserving’ of assistance, perceptions of identity and cultural similarity can play an important role (De Coninck and Matthijs, 2020; Carmel & Sojka, 2021). As such, the psychological distance between residents that enhanced fortifications like border walls create should thus lead to an increased perceived cultural dissimilarity that decreases respondents’ opinions of pro-immigration policy and migrants themselves. 
+  In contexts with little border fortification, intergroup contact could help provide information and can circumvent convenient heuristics such as stereotypes and media narratives, complicating residents’ thoughts and creating less anti-migrant sentiment through interaction and exposure (see @pettigrew2006). For example, research on cross-border contact between Czechs and Germans highlights how more frequent interaction improves perceptions of each neighbor as well as the importance of local contexts such as cultural history that could moderate this relationship (Mirwaldt, 2010). I argue that the level of exposure to the physical institution of the border serves as another important contextual factor that could moderate the dynamic of contact on improving attitudes. Previous research provides some evidence that among the general criteria the public uses to determine whether migrants are ‘deserving’ of assistance, perceptions of identity and cultural similarity can play an important role (De Coninck and Matthijs, 2020; Carmel & Sojka, 2021). As such, the psychological distance between residents that enhanced fortifications like border walls create should thus lead to an increased perceived cultural dissimilarity that decreases respondents’ opinions of pro-immigration policy and migrants themselves. 
 
-Ultimately, I argue that in localities closer to low levels of border fortification, respondents will be more favorable towards immigration and migrants. With less fortifications comes a decrease in the symbolic ‘otherness’ of those who cross it (Jaramillo-Dent & Pérez-Rodríguez, 2021) as well as a decline in the psychological impediments that create feelings of cultural distance (Mutz & Simmons, 2022). This better enables the mechanism of greater contact and exposure to migrants to counteract larger anti-immigrant narratives or stereotypes that may be salient or otherwise impact respondents’ attitudes towards immigration and migration more generally. However, localities near borders with higher levels of fortifications will shape respondents’ attitudes towards immigrants negatively, resulting in negative attitudes towards immigration and migration. This hypothesis is summarized below: 
+U   ltimately, I argue that in states with lower overall levels of border fortification, respondents will be more favorable towards immigration and migrants. With less fortifications comes a decrease in the symbolic ‘otherness’ of those who cross it [@jaramillo-dent2021] as well as a decline in the psychological impediments that create feelings of cultural distance (Mutz & Simmons, 2022). This better enables the mechanism of greater contact and exposure to migrants to counteract larger anti-immigrant narratives or stereotypes that may be salient or otherwise impact respondents’ attitudes towards immigration and migration more generally. As respondents may be influenced by local conditions, they are not isolated from larger happenings of their country - border fortifications in other localities influence the overall perception of the state of border security. As such, respondents may be influenced by the general state of border securitization in their countries.  Given these considerations, I derive the following hypotheses: 
+  **H1a: Respondents that live closer to the border will have more positive attitudes towards immigration and migration**
+  **H1b: Higher levels of overall border fortification will result in more negative attitudes towards immigration/migration**
 
-  **H1: Respondents that live closer to higher levels of local border fortification will have more negative attitudes towards immigration and migration than those who live closer to lower levels of local border fortification.** 
 
 ## "Visibility" of the Border and its Subsequent Impact
 
-While respondents near areas with higher levels of border fortification are likely to feel enhanced cultural distance from immigrants entering the country, I argue that this effect is only exacerbated for people living further away that have even more limited exposure to the actual behavior and conduct of migrants. While other criteria matter for public opinion towards migrants’ deservingness such as perceptions of immigrants’ gratitude (attitude) or ability to contribute to the state they stay in (reciprocity) [@deconinck2020a], I argue that enhanced fortification could also alter people’s perceptions of migrants’ reciprocity or attitude through larger narratives related to the criminality of immigrants. Members of the public who live far from the border may have limited information or suffer from higher information costs to learn about the state of immigration policy and the nature of those who cross the border. Border fortifications such as fences and walls are convenient tools for the state to establish a tangible narrative and have it reinforced through media coverage and validating negative or harmful rhetoric that portrays immigration as a threat or immigration policy as broken. For instance, during the mass migration wave since 2015, campaign messages from the Hungarian government chose to take a more aggressive and anti-immigrant approach to the crisis: rather than provide humanitarian aid to refugees like many other European governments, the Hungarian government built a wall and began an anti-migration campaign across a wide variety of media sources [@bajomi-lazar2019]. While it is a challenge to parse the effects of fortifications from potential government controversy and rhetoric regarding immigration, this paper takes a first attempt at beginning to unravel this oftentimes dual-headed strategy by examining how border fortifications themselves influence public attitudes.     
+While the public may be influenced by their local encounters with migrants as well as the national level of securitization, I anticipate that these factors do not operate in isolation from one another. Rather, localities near borders with higher levels of fortifications will shape respondents’ attitudes towards immigrants negatively, resulting in negative attitudes towards immigration and migration. I argue that respondents near areas with higher levels of border fortification are likely to feel enhanced cultural distance from immigrants entering the country. Further, I argue that this effect is only exacerbated for people living further away that have even more limited exposure to the actual behavior and conduct of migrants. While other criteria matter for public opinion towards migrants’ deservingness such as perceptions of immigrants’ gratitude (attitude) or ability to contribute to the state they stay in (reciprocity) [@deconinck2020a], I argue that enhanced fortification could also alter people’s perceptions of migrants’ reciprocity or attitude through larger narratives related to the criminality of immigrants. Members of the public who live far from the border may have limited information or suffer from higher information costs to learn about the state of immigration policy and the nature of those who cross the border. 
 
-For example, in the U.S. context, @jaramillo-dent2021 find that coverage of migrant crossings past the U.S.-Mexico border wall creates an emphasis on the migrant’s behavior as criminal or dangerous. Despite narratives in the U.S. that immigrants pose a criminal threat and create instability, research shows that residents of border regions near the U.S. such as El Paso, Texas report feeling safe and don’t report insecurity because of their proximity to the border [@castaneda2020]. In other words, how "visible" immigrants (and their effects on local populations) truly are without the lens of the media is increasingly limited for those who live further away from the border. I argue that regardless of whether border communities are safer or more dangerous than non-border communities, the limited first-hand visiblity of actual border policy and migrant behavior serves as a factor that allows for stereotypes and other heuristics to take hold.  Previous research also indicates that the presence of deservingness cues can be extremely minimal yet strongly shape respondent attitudes towards providing welfare support [@aaroe2014]. If fortifications should create conditions that result in enhancing the ability of the state or anti-immigration parties to push narratives emphasizing ‘criminality’ of migrants, I argue that the enhanced likelihood of negative public narratives such as these should therefore decrease the likelihood for respondents perceiving immigrants as reciprocal or grateful for aid provided by the recipient state. Given these reasons, I derive my second hypothesis: 
+Border fortifications such as fences and walls are convenient tools for the state to establish a tangible narrative and have it reinforced through media coverage and validating negative or harmful rhetoric that portrays immigration as a threat or immigration policy as broken. For instance, during the mass migration wave since 2015, campaign messages from the Hungarian government chose to take a more aggressive and anti-immigrant approach to the crisis: rather than provide humanitarian aid to refugees like many other European governments, the Hungarian government built a wall and began an anti-migration campaign across a wide variety of media sources [@bajomi-lazar2019]. While it is a challenge to parse the effects of fortifications from potential government controversy and rhetoric regarding immigration, this paper takes a first attempt at beginning to unravel this oftentimes dual-headed strategy by examining how border fortifications themselves influence public attitudes. 
 
-  **H2: As distance to the border increases, the impact of higher levels of overall border fortification on respondents’ attitudes towards immigration/migration becomes more negative.** 
+For example, in the U.S. context, @jaramillo-dent2021 find that coverage of migrant crossings past the U.S.-Mexico border wall creates an emphasis on the migrant’s behavior as criminal or dangerous. Despite narratives in the U.S. that immigrants pose a criminal threat and create instability, research shows that residents of border regions near the U.S. such as El Paso, Texas report feeling safe and don’t report insecurity because of their proximity to the border [@castaneda2020]. In other words, how "visible" immigrants (and their effects on local populations) truly are without the lens of the media is increasingly limited for those who live further away from the border. I argue that regardless of whether border communities are safer or more dangerous than non-border communities, the limited first-hand visiblity of actual border policy and migrant behavior serves as a factor that allows for stereotypes and other heuristics to take hold.  Previous research also indicates that the presence of deservingness cues can be extremely minimal yet strongly shape respondent attitudes towards providing welfare support [@aaroe2014]. If fortifications should create conditions that result in enhancing the ability of the state or anti-immigration parties to push narratives emphasizing ‘criminality’ of migrants, I argue that the enhanced likelihood of negative public narratives such as these should therefore decrease the likelihood for respondents perceiving immigrants as reciprocal or grateful for aid provided by the recipient state. Given these reasons, I derive my second set of hypotheses: 
+
+  **H2a: As distance to the border increases, the impact of higher levels of local border fortification on respondents’ attitudes towards immigration/migration becomes more negative.** 
+  **H2b: As distance to the border increases, the impact of higher levels of overall border fortification on respondents’ attitudes towards immigration/migration becomes more negative.** 
+
 
 Similar research has been conducted in an American context, examining how partisanship and proximity to the border interact to impact support for building a border wall with Mexico [@cortina2020]. While conservative partisans farther away from the border are more supportive of a wall, conservatives closer to the border that have greater interaction with the reality and context of the place in reference, avoiding a separation of self from the subject of political debate or discussion [@cortina2020]. I argue that this is especially applicable to immigration politics more generally. First, Immigration can play such a tangible role in people’s political conceptions that it represents its own political-ideological dimension capturing dynamics related to migration, national identity, and multiculturalism [@ogrady2019]. Immigration also serves as a politically useful topic for conservative partisans to exploit to acquire political capital and electoral success as part of a larger message to stoke right-wing populist support [@dipiazza2023; @kamenova2017]. This can be frequently seen in prevalent right-wing populist executives of today. 
 
@@ -105,254 +95,34 @@ In the case of Hungary and immigration, this propaganda campaign from the govern
 
   **H4: As overall border fortification increases, the impact of conservative ideology on respondents’ attitudes towards immigration/migration becomes more negative.** 
 
-# Research Design
 
 
-#Data Description
 
+#Research Design
 
-```{r Fuzzy Matching Process, include=FALSE}
+	In order to test my hypothesis, I largely rely on data provided by the Integrated Values Survey (IVS) (1981-2022) [@evs2022; @hearpfer2024]. This survey combines data from the European Value Study [@evs2022] and the World Value Survey [@harpfer2024] into one larger cross-national time-series dataset. This provides an initial potential sample of 666,907 observations over 7 waves, featuring 118 different countries and territories. 
 
-getwd()
-setwd("/Users/tdain/OneDrive/Desktop/R Data/Borders and Public Opinion Paper")
+  To investigate the role of border fortifications and distance to the border on migration attitudes, I test two primary dependent variables provided by the IVS [@evs2022; @hearpfer2024]: survey respondents’ opposition to migrants or foreign workers as a neighbor, as well as their support for pro-immigrant policy. The first question asks respondents, “On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?” “Immigrants/foreign workers” are one of the groups listed. This variable is binary, where respondents either mentioned (1) or did not mention (0) immigrants as a group they would not like as neighbors. 
 
+  The second question asks respondents, “How about people from other countries coming here to work. Which one of the following do you think the government should do?” on an ordinal scale ranging from 1, let anyone come, to 4, prohibit people from coming. I recode this variable to a binary, in which respondents indicate support for immigration (1) if they answer with either let anyone come or as long as jobs are available, and 0 otherwise. By using these variables, I gain insights into respondents’ attitudes towards migrants themselves as well as their attitudes towards what state immigration policy ought to be.
 
-a <- read.csv("public-opinion-paper/data/centroid_border_distances.csv")
+  To measure distance to the border, I leverage data captured in the IVS that records what administrative district the survey was taken in. Using ArcGIS software, I take administrative district data and calculate the centroid, or geographic center, of each first-level administrative district. I then calculate the distance of that centroid to the nearest state-level border and capture what state is on the other side of the border. This distance is then recorded in hundreds of kilometers and included in the data as the distance to the border. I then use a fuzzy matching process to match the GIS software’s district names to the IVS’ recorded district names.^[Before doing so, I first match districts with exact name matches, only fuzzy matching those that do not have a perfect match.] By doing so, this provides me with greater confidence that the districts accurately align with one another. Future research could improve by looking at more small-n case or single-case analysis in order to have a higher degree of certainty that district names are accurately matched for all districts.
 
-a_fuzzy <- data.frame(a)
+  To measure border fortifications, I use three main variables to robustly examine the relationship between fortifications and attitudes. First, I use data from @simmons2022, which creates a continuous latent scale for the border orientation, or the state’s “…commitment to the public, authoritative, and spatial display of its capacities to control the terms of penetration of its national borders…” (Simmons & Kenwick, 2022, 853), ranging from more permissive border orientations to more controlling ones. Second, I utilize a border infrastructure index from their constituent indicators of border infrastructure – specifically, the degree to which border crossings are gated, feature multiple buildings, and a road [@simmons2022]. Third, I use the degree of police presence near the border relative to the interior of the country to estimate whether states are policing the border more or less heavily than they are the interior [@simmons2022]. While I primarily focus on the border orientation measure, the addition of the other variables provides an opportunity to explore potential nuance in what specific factors that contribute to border orientation result in positive or negative sentiment towards migrants and pro-immigration policy.
 
-b <- read.csv("C:/Users/tdain/OneDrive/Desktop/Stata Data/Graduate Work/Borders and Public Opinion Paper/data/WVS_province_key.csv")
-b_fuzzy <- data.frame(b)
-names(b) <- c("District_Name")
-names(b_fuzzy) <- c("District_Name")
-b_split <- split(b_fuzzy, (seq(nrow(b_fuzzy))-1) %/% 50000) 
+  Because these variables are at a more precise level of analysis, I construct two different aggregations for robustness. First, I average the border fortifications to the border-dyad year level, to capture the border orientation, infrastructure, and police presence along a specific country border. Second, I average these factors for the entirety of the country’s borders – to capture what the overall state of border fortifications looks like in a given country-year. For instance, in the case of France, the first measure would have potentially different values for the border between Belgium and France than France and Germany, while the second measure results in the same values regardless of which specific country is bordering France. I do so in order to more directly discern if the fortifications at the closest border to a respondent matters or if only the fortifications in the country at-large matter, or vice-versa.
 
+  Finally, I control for multiple factors that could confound the relationship between my key variables. First, I include a litany of respondent demographic factors such as age, income (on an ordinal scale), education (on an ordinal scale), whether respondents are female (coded 1) or not (0), and whether respondents are married (1) or not (0). Second, I include a set of questions that provide information on respondents’ political worldview. These include a 10-point scale for their political orientation, where a 1 indicates a respondent is strongly left-leaning while a 10 indicates a respondent is strongly right-leaning in their political views. Further, I include respondents’ interest in politics, general trust in the public, as well as belief in personal control over their life.^[The specific questions used for these are E023, A165, and A173, respectively.] Additionally, I also include the country’s level of GDP per capita in order to capture national-level wealth characteristics []. Lastly, in order to account for larger systemic or temporal factors that are not otherwise controlled, I include year-level and region-level fixed effects.
 
-if(!require(tinytex)) install.packages(install.packages("tinytex"))
-if(!require(fuzzyjoin)) install.packages(install.packages("fuzzyjoin"))
-if(!require(dplyr)) install.packages(install.packages("dplyr"))
-if(!require(stringdist)) install.packages(install.packages("stringdist"))
-if(!require(vctrs)) install.packages(install.packages("vctrs"))
-
-library(fuzzyjoin); library(dplyr); library(stringdist)
-
-
-result0 <- stringdist_join(a_fuzzy, b_split[["0"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result1 <- stringdist_join(a_fuzzy, b_split[["1"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result2 <- stringdist_join(a_fuzzy, b_split[["2"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result3 <- stringdist_join(a_fuzzy, b_split[["3"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result4 <- stringdist_join(a_fuzzy, b_split[["4"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result5 <- stringdist_join(a_fuzzy, b_split[["5"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-
-result6 <- stringdist_join(a_fuzzy, b_split[["6"]], 
-                by = "District_Name",
-                mode = "left",
-                ignore_case = FALSE, 
-                method = "jw", 
-                max_dist = 99, 
-                distance_col = "dist") %>%
-  group_by(District_Name) %>%
-  slice_min(order_by = dist, n = 1)
-```
 
 # Results
 
-
-```{r Random Effects Logistic Regression (random intercept for country-level data), include=FALSE}
-
-m1 <- glmer(DV ~ IV1 + IV2 + IV3 + IV4 + ... +
-    (1 | COUNTRY), data = DATA, family = binomial)
-    
-se <- sqrt(diag(vcov(m1)))
-
----
-# table of estimates with 95% CI
----
-(tab <- cbind(Est = fixef(m1), LL = fixef(m1) - 1.96 * se, UL = fixef(m1) + 1.96 *
-    se))
----
-# Odds Ratios of the Table
----
-exp(tab)
-
----
-  #Dot-and-whisker plot
----
-  
-  m1 <- lm(mpg ~ wt + cyl + disp + gear, data = mtcars)
-
-  dwplot(list(m1, m2, m3),
-       vline = geom_vline(
-           xintercept = 0,
-           colour = "grey60",
-           linetype = 2
-       ),
-       vars_order = c("am", "cyl", "disp", "gear", "hp", "wt"),
-       model_order = c("Model 2", "Model 1", "Model 3")
-       )  |>  # plot line at zero _behind_coefs
-    relabel_predictors(
-        c(
-            am = "Manual",
-            cyl = "Cylinders",
-            disp = "Displacement",
-            wt = "Weight",
-            gear = "Gears",
-            hp = "Horsepower"
-        )
-    ) +
-    theme_bw(base_size = 4) + 
-    # Setting `base_size` for fit the theme
-    # No need to set `base_size` in most usage
-    xlab("Coefficient Estimate") + ylab("") +
-    geom_vline(xintercept = 0,
-               colour = "grey60",
-               linetype = 2) +
-    ggtitle("Predicting Gas Mileage") +
-    theme(
-        plot.title = element_text(face = "bold"),
-        legend.position = c(0.007, 0.01),
-        legend.justification = c(0, 0),
-        legend.background = element_rect(colour = "grey80"),
-        legend.title = element_blank()
-    ) 
-  
-  
-# Transform cyl to factor variable in the data
-m_factor <-
-    lm(mpg ~ wt + cyl + disp + gear, data = mtcars |> mutate(cyl = factor(cyl)))
-
-# Remove all model estimates that start with cyl*
-m_factor_df <- broom::tidy(m_factor) |>
-    filter(!grepl('cyl*', term))
-
-dwplot(m_factor_df)
-
-
-#Predicted Probabilities for Output
-
-summary(DATA$VARIABLE)
-
-jvalues <- with(DATA, seq(from = min(VARIABLE), to = max(VARIABLE), length.out = 100))
-
-# calculate predicted probabilities and store in a list
-pp <- lapply(jvalues, function(j) {
-    tmpdat$VARIABLE <- j
-    predict(m, newdata = tmpdat, type = "response")
-})
-
-# average marginal predicted probability across a few different Lengths of
-# VARIABLE
-sapply(pp[c(SET POINTS ALONG IV HERE (e.g. 10, 20. 30, 40))], mean)
-
-# get the means with lower and upper quartiles
-plotdat <- t(sapply(pp, function(x) {
-    c(M = mean(x), quantile(x, c(0.25, 0.75)))
-}))
-
-# add in LengthofStay values and convert to data frame
-plotdat <- as.data.frame(cbind(plotdat, jvalues))
-
-# better names and show the first few rows
-colnames(plotdat) <- c("PredictedProbability", "Lower", "Upper", "VARIABLE")
-head(plotdat)
-
-
-# plot average marginal predicted probabilities with their lower/upper quartiles (the range in which 50 percent of the predicted probabilities fell)
-ggplot(plotdat, aes(x = LengthofStay, y = PredictedProbability)) + geom_linerange(aes(ymin = Lower,
-    ymax = Upper)) + geom_line(size = 2) + ylim(c(0, 1))
-
-#plot average marginal predicted probabilities over another ordinal/categorical variable
-
-# calculate predicted probabilities and store in a list
-biprobs <- lapply(levels(DATA$CATEGORICAL VARIABLE), function(stage) {
-  tmpdat$CATEGORICAL VARIABLE[] <- stage
-  lapply(jvalues, function(j) {
-    tmpdat$VARIABLE <- j
-    predict(m, newdata = tmpdat, type = "response")
-  })
-})
-
-# get means and quartiles for all jvalues for each level of CancerStage
-plotdat2 <- lapply(biprobs, function(X) {
-  temp <- t(sapply(X, function(x) {
-    c(M=mean(x), quantile(x, c(.25, .75)))
-  }))
-  temp <- as.data.frame(cbind(temp, jvalues))
-  colnames(temp) <- c("PredictedProbability", "Lower", "Upper", "LengthofStay")
-  return(temp)
-})
-
-# collapse to one data frame
-plotdat2 <- do.call(rbind, plotdat2)
-
-# add cancer stage
-plotdat2$CancerStage <- factor(rep(levels(DATA$CATEGORICAL VARIABLE), each = length(jvalues)))
-
-ggplot(plotdat2, aes(x = VARIABLE, y = PredictedProbability)) +
-  geom_ribbon(aes(ymin = Lower, ymax = Upper, fill = CATEGORICAL VARIABLE), alpha = .15) +
-  geom_line(aes(colour = CATEGORICAL VARIABLE), size = 2) +
-  ylim(c(0, 1)) + facet_wrap(~  CATEGORICAL VARIABLE)
+When modeling the analysis, I use logistic regression with country-level random intercepts in order to better account for country-level heterogeneity otherwise not captured with the existing variables [@bell2015]. For Hypothesis 1, I run ____. For Hypothesis 2, I run ___. For Hypothesis 3, I run ____. For Hypothesis 4, I run ____. For Hypothesis 5, I run _____.
 
 
 
 
-```
 
-
----
 
 # Discussion and Conclusion
 Test
