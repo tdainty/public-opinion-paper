@@ -16,13 +16,13 @@ keywords: "borders, public opinion, immigration policy, immigration attitudes"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 fontsize: 12pt
 spacing: double
-bibliography: "C:Users/tdain/OneDrive/Desktop/R Data/Borders and Public Opinion Paper/public-opinion-paper/publicopinioncitations.bib"
+bibliography: publicopinioncitations.bib
 biblio-style: apsr
 citecolor: black
 linkcolor: black
 endnote: no
 ---
-library(tinytex)
+
 
 # Introduction
 
@@ -37,7 +37,7 @@ Over 50% of border walls built have been during the post=Cold War era [@carter20
 
 # Literature Review
 
-##Contact Theory and Migration
+## Contact Theory and Migration
 
   The broad argument of contact theory or the ‘contact hypothesis’ is straightforward: that prejudice can be reduced, and that understanding can be increased through contact between majority and minority groups [@pettigrew2006; @allport1970]. For instance, greater intergroup contact can bolster trust and forgiveness for past wrongs by reducing anxiety and improving empathy and can result in effects that generalize beyond the immediate outgroup members to the larger outgroup [@pettigrew2011]. Evidence for intergroup contact theory is generally robust in the field of psychology [@pettigrew2006; @paluck2019; @pettigrew2011), but further work needs to be done on examining how racial/ethnic prejudice is impacted by intergroup contact [@paluck2019]. Through investigating immigration attitudes, especially those on immigrants themselves rather than policy, this paper contributes to the literature on intergroup contact theory.
 
@@ -45,18 +45,18 @@ Over 50% of border walls built have been during the post=Cold War era [@carter20
 
   Following a call for further testing to investigate this potential mechanism shaping immigration attitudes [@young2018] and evidence that suggests that views on immigration may vary among different localities [@arvanitidis2021], this paper leverages subnational survey data to provide further examination of how local communities’ potential exposure to both migrants and highly visible immigration policy decisions such as border fortifications shapes their subsequent attitudes on immigration policy and stigma towards migrants or foreign workers.
 
-##Economic Factors and Immigration Attitudes:
+## Economic Factors and Immigration Attitudes:
 
   One major focus of literature on immigration attitudes has been the role of economic security and the impact of the economy or wealth at-large on attitudes. While this mechanism has received considerable attention, it has also been met with conflictual findings. For instance, evidence shows how individuals with lower levels of income are less supportive of immigration [@arvanitidis2021; @young2018; @hoskin1983], although this evidence does not come without conflicting results in other contexts, such as the U.S. [@binder1997]. @hoskin1983 provided some initial evidence on the role of materialist and post-materialist values, impacted by income and education, impacting immigration attitudes. This has only been expanded on as the literature has developed. 
   
   @burns2000, for instance, shows how individual economic fears could be a direct influence on attitudes through fears of immigrant labor ‘replacing’ them. However, @hainmueller2014 shows that national-level economic factors play a meaningful role rather than individual circumstances. Similarly, other research highlights national policy choices as meaningful influences. For example, @artiles2014 finds evidence that strong trade unions and social protection policies result in greater levels of integration of immigrants through reducing social inequality and the risk of poverty in the population. 
 
-##The Role of Culture, Race/Ethnicity, and Prejudice:
+## The Role of Culture, Race/Ethnicity, and Prejudice:
 
   While economic security is a likely influence, others argue and find less conflictual evidence for the role of cultural values, perceived differences, and prejudice in impacting attitudes [@heath2020; @heath2020a]. For instance, while @burns2000 find some evidence that individual economic fears impact attitudes, they also find that racial and ethnic stereotypical thinking about the work ethic and intelligence of other groups is a strong influence on individual attitudes towards immigration policy. @espenshade1993 finds evidence supporting the role of cultural affinity between respondents and undocumented migrants in impacting attitudes towards illegal immigration and migrants. Similarly, @davidov2020 finds that the role of individual values in shaping immigration attitudes is stronger in countries that have higher levels of intellectual autonomy and weaker in countries that have higher levels of cultural embeddedness. Perceived differences between people may also play a role. For example, @ayers2009 highlights the impact of racial differences in the US in shaping opinion toward migration. In a subsample of EU countries, @deconinck2020 finds that migrants with the same ethnicity, from rich countries, or other European countries receive higher levels of support than migrants who do not have such qualities.
   Taken together, the amount of evidence highlighting the role of both economic and cultural factors in shaping public opinion on immigration ultimately emphasizes the importance of both of these factors. Relatedly, @solano2023 finds evidence that highlights the role of both economic factors like GDP per capita and welfare expenditure as well as political ideology in impacting policymakers actions on migrant integration policies. This paper highlights the role of border fortifications as a visible policy that could respond to both economic and cultural qualms. Border fortifications and border walls specifically have been in large response to both heightened levels of migrants [@avdan2023], as well as concerns related to economic security [@carter2017], and as such, serve as a visible reminder of both economic disparity between countries on either side of the border as well as perceived cultural difference and dissimilarity. 
 
-##Additional Influences:
+## Additional Influences
 
 	While much of the literature focuses on economic or cultural factors that impact immigration attitudes, other impacts have also been shown to play a meaningful role in shaping opinions toward immigration. First, @davidov2020 emphasizes the role of individual values such as universalism or conservatism in impacting the degree to which respondents view immigration as a threat. Second, perceived threats to human security can also impact attitudes towards immigration. For instance, terrorist attacks are shown to bolster support for more restrictionist immigration policy [@young2018]. Third, the particularity of whether migrants are ‘immigrants’ or ‘refugees’ can impact attitudes regarding these groups, where refugees receive higher levels of support than immigrants [@deconinck2020]. Additionally, public opinion may be further shaped by existing policy.
 Fourth, some evidence of thermostatic public opinion has been found for immigration policy. For example, in the UK, more liberal and less restrictive immigration policies of the late 90s and early 2000s saw strong public demand for restriction in the late 2000s and onward [@ford2015]. The responsiveness of the government to these demands, however, is generally found to be weak. @ford2015 shows how governments like the UK have a tradeoff between responding to demands for less immigration while also maintaining competitiveness for high-demand and skilled migrants. Relatedly, @morales2015 shows that rather than the strength of anti-immigrant parties influencing the gap in opinion and policy, it is the salience of the issue, media coverage, and public debate that results in policy change. I argue that the saliency of immigration should vary at a subnational level as well – whether people are closer to the very borders that migrants are entering from should impact the perceived importance of the issue as well as influence perceptions of coverage and public debate. This latter argument is discussed further below.
@@ -100,7 +100,7 @@ In the case of Hungary and immigration, this propaganda campaign from the govern
 
 
 
-#Research Design
+# Research Design
 
 	In order to test my hypothesis, I largely rely on data provided by the Integrated Values Survey (IVS) (1981-2022) [@evs2022; @hearpfer2024]. This survey combines data from the European Value Study [@evs2022] and the World Value Survey [@harpfer2024] into one larger cross-national time-series dataset. This provides an initial potential sample of 666,907 observations over 7 waves, featuring 118 different countries and territories. 
 
@@ -122,17 +122,30 @@ In the case of Hungary and immigration, this propaganda campaign from the govern
 When modeling the analysis, I use logistic regression with country-level random intercepts in order to better account for country-level heterogeneity otherwise not captured with the existing variables [@bell2015]. For Hypothesis 1, I run ____. For Hypothesis 2, I run ___. For Hypothesis 3, I run ____. For Hypothesis 4, I run ____. For Hypothesis 5, I run _____.
 
 
+![Figure 1: Testing H1 - Opposing Migrant Neighbors](figures/border_orientation_figure1.png)
 
+![Figure 2: Testing H1 - Pro-Immigrant Policy](figures/border_orientation_policy_figure1.png)
+
+![Figure 3: Testing H2a - Opposing Migrant Neighbors](figures/m4_marginal_1.png)
+
+![Figure 4: Testing H2a - Pro-Immigrant Policy](figures/m4_policy_marginal_1.png)
+
+![Figure 5: Testing H2b - Opposing Migrant Neighbors](figures/m4a_marginal_1.png)
+
+![Figure 6: Testing H2b - Pro-Immigrant Policy](figures/m4a_policy_marginal_1.png)
+
+![Figure 7: Testing H3 - Opposing Migrant Neighbors](figures/m5_marginal_1.png)
+
+![Figure 8: Testing H3 - Pro-Immigrant Policy](figures/m5_policy_marginal_1.png)
+
+![Figure 9: Testing H4 - Opposing Migrant Neighbors](figures/m6_marginal_1.png)
+
+![Figure 10: Testing H4 - Pro-Immigrant Policy](figures/m6_policy_marginal_1.png)
 
 
 
 # Discussion and Conclusion
 Test
-
----
-# This is a comment, set off with --- and started with #.  Comments are good for notes to self that you don't want to show up in the output.  Below is LaTeX code for a page break.
----
-
 
 
 
