@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.19)  19 DEC 2024 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.20)  20 DEC 2024 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,13 +386,25 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 151.
 
-Package natbib Warning: Citation `carter2017' on page 1 undefined on input line 219.
+Package natbib Warning: Citation `mcauliffe2024' on page 1 undefined on input line 220.
 
 
-Package natbib Warning: Citation `avdan2023' on page 1 undefined on input line 221.
+Package natbib Warning: Citation `mcauliffe2024' on page 1 undefined on input line 223.
 
 
-Package natbib Warning: Citation `avdan2023' on page 1 undefined on input line 222.
+Package natbib Warning: Citation `mcauliffe2024' on page 1 undefined on input line 224.
+
+
+Package natbib Warning: Citation `carter2017' on page 1 undefined on input line 229.
+
+
+Package natbib Warning: Citation `carter2017' on page 1 undefined on input line 233.
+
+
+Package natbib Warning: Citation `avdan2023' on page 1 undefined on input line 233.
+
+
+Package natbib Warning: Citation `avdan2023' on page 1 undefined on input line 235.
 
 
 
@@ -400,314 +412,516 @@ Package natbib Warning: Citation `avdan2023' on page 1 undefined on input line 2
 
 {c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
-Package natbib Warning: Citation `pettigrew2006' on page 2 undefined on input line 236.
+Package natbib Warning: Citation `arvanitidis2021' on page 2 undefined on input line 245.
 
 
-Package natbib Warning: Citation `allport1970' on page 2 undefined on input line 236.
+Package natbib Warning: Citation `young2018' on page 2 undefined on input line 245.
 
 
-Package natbib Warning: Citation `pettigrew2011' on page 2 undefined on input line 240.
+Package natbib Warning: Citation `hoskin1983' on page 2 undefined on input line 245.
 
 
-Package natbib Warning: Citation `pettigrew2006' on page 2 undefined on input line 241.
+Package natbib Warning: Citation `binder1997' on page 2 undefined on input line 245.
 
 
-Package natbib Warning: Citation `paluck2019' on page 2 undefined on input line 242.
+Package natbib Warning: Citation `hoskin1983' on page 2 undefined on input line 245.
 
 
-Package natbib Warning: Citation `pettigrew2011' on page 2 undefined on input line 242.
+Package natbib Warning: Citation `heath2020' on page 2 undefined on input line 248.
 
 
-Package natbib Warning: Citation `paluck2019' on page 2 undefined on input line 244.
+Package natbib Warning: Citation `heath2020a' on page 2 undefined on input line 248.
 
 
-Package natbib Warning: Citation `young2018' on page 2 undefined on input line 250.
+Package natbib Warning: Citation `burns2000' on page 2 undefined on input line 248.
 
 
-Package natbib Warning: Citation `basile2020' on page 2 undefined on input line 252.
+Package natbib Warning: Citation `espenshade1993' on page 2 undefined on input line 248.
 
 
-Package natbib Warning: Citation `czymara2021' on page 2 undefined on input line 255.
+Package natbib Warning: Citation `carter2017' on page 2 undefined on input line 251.
 
 
-Package natbib Warning: Citation `ayers2009' on page 2 undefined on input line 260.
+Package natbib Warning: Citation `mutz2022' on page 2 undefined on input line 253.
 
 
-Package natbib Warning: Citation `danckert2017' on page 2 undefined on input line 264.
+Package natbib Warning: Citation `jaramillo-dent2021' on page 2 undefined on input line 256.
 
 
-Overfull \hbox (12.71442pt too wide) in paragraph at lines 248--265
-\T1/lmr/m/n/12 per-cent-age of im-mi-grants in the coun-try re-sults in sharp de-clines in sup-port for anti-immigration
- []
+Package natbib Warning: Citation `pettigrew2006' on page 2 undefined on input line 257.
 
 
 
 [2]
 
-Package natbib Warning: Citation `young2018' on page 3 undefined on input line 267.
+Package natbib Warning: Citation `pettigrew2006' on page 3 undefined on input line 310.
 
 
-Package natbib Warning: Citation `arvanitidis2021' on page 3 undefined on input line 269.
+Package natbib Warning: Citation `allport1970' on page 3 undefined on input line 310.
 
 
-Package natbib Warning: Citation `arvanitidis2021' on page 3 undefined on input line 284.
+Package natbib Warning: Citation `pettigrew2011' on page 3 undefined on input line 314.
 
 
-Package natbib Warning: Citation `young2018' on page 3 undefined on input line 284.
+Package natbib Warning: Citation `pettigrew2006' on page 3 undefined on input line 315.
 
 
-Package natbib Warning: Citation `hoskin1983' on page 3 undefined on input line 284.
+Package natbib Warning: Citation `paluck2019' on page 3 undefined on input line 316.
 
 
-Package natbib Warning: Citation `binder1997' on page 3 undefined on input line 286.
+Package natbib Warning: Citation `pettigrew2011' on page 3 undefined on input line 316.
 
 
-Package natbib Warning: Citation `hoskin1983' on page 3 undefined on input line 286.
-
-
-Package natbib Warning: Citation `burns2000' on page 3 undefined on input line 292.
-
-
-Package natbib Warning: Citation `hainmueller2014' on page 3 undefined on input line 294.
-
-
-Package natbib Warning: Citation `artiles2014' on page 3 undefined on input line 298.
-
-
-Package natbib Warning: Citation `heath2020' on page 3 undefined on input line 309.
-
-
-Package natbib Warning: Citation `heath2020a' on page 3 undefined on input line 309.
-
-
-Package natbib Warning: Citation `burns2000' on page 3 undefined on input line 309.
-
-
-Package natbib Warning: Citation `espenshade1993' on page 3 undefined on input line 313.
-
-
-Package natbib Warning: Citation `davidov2020' on page 3 undefined on input line 316.
-
-
-Package natbib Warning: Citation `ayers2009' on page 3 undefined on input line 321.
-
-
-Package natbib Warning: Citation `deconinck2020' on page 3 undefined on input line 323.
-
-
-Package natbib Warning: Citation `solano2023' on page 3 undefined on input line 329.
-
-
-Package natbib Warning: Citation `avdan2023' on page 3 undefined on input line 336.
-
-
-Package natbib Warning: Citation `carter2017' on page 3 undefined on input line 337.
+Package natbib Warning: Citation `paluck2019' on page 3 undefined on input line 318.
 
 
 
 [3]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 343.
-(c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (4840.7476pt too wide) in paragraph at lines 345--345
-[]\T1/lmtt/m/n/12 While much of the literature focuses on economic or cultural factors that impact immigration attitudes, other impacts have also been shown to play a meaningful role in shaping opinions toward immigration. First, @davidov2020 emphasizes the role of individual values such as universalism or conservatism in impacting the degree to which respondents view immigration as a threat. Second, perceived threats to human security can also impact attitudes towards immigration. For instance, terrorist attacks are shown to bolster support for more restrictionist immigration policy [@young2018]. Third, the particularity of whether migrants are `immigrants' or `refugees' can impact attitudes regarding these groups, where refugees receive higher levels of support than immigrants [@deconinck2020]. Additionally, public opinion may be further shaped by existing policy.[] 
+
+Package natbib Warning: Citation `young2018' on page 4 undefined on input line 324.
+
+
+Package natbib Warning: Citation `basile2020' on page 4 undefined on input line 326.
+
+
+Package natbib Warning: Citation `czymara2021' on page 4 undefined on input line 329.
+
+
+Package natbib Warning: Citation `ayers2009' on page 4 undefined on input line 334.
+
+
+Package natbib Warning: Citation `danckert2017' on page 4 undefined on input line 338.
+
+
+Overfull \hbox (12.71442pt too wide) in paragraph at lines 322--339
+\T1/lmr/m/n/12 per-cent-age of im-mi-grants in the coun-try re-sults in sharp de-clines in sup-port for anti-immigration
  []
+
+
+Package natbib Warning: Citation `young2018' on page 4 undefined on input line 341.
+
+
+Package natbib Warning: Citation `arvanitidis2021' on page 4 undefined on input line 343.
 
 
 
 [4]
 
-Package natbib Warning: Citation `ford2015' on page 5 undefined on input line 351.
+Package natbib Warning: Citation `arvanitidis2021' on page 5 undefined on input line 358.
 
 
-Package natbib Warning: Citation `ford2015' on page 5 undefined on input line 352.
+Package natbib Warning: Citation `young2018' on page 5 undefined on input line 358.
 
 
-Package natbib Warning: Citation `morales2015' on page 5 undefined on input line 355.
+Package natbib Warning: Citation `hoskin1983' on page 5 undefined on input line 358.
 
 
-Package natbib Warning: Citation `mondak1993' on page 5 undefined on input line 368.
+Package natbib Warning: Citation `binder1997' on page 5 undefined on input line 360.
 
 
-Package natbib Warning: Citation `rugeley2012' on page 5 undefined on input line 368.
+Package natbib Warning: Citation `hoskin1983' on page 5 undefined on input line 360.
 
 
-Package natbib Warning: Citation `petersen2009' on page 5 undefined on input line 368.
+Package natbib Warning: Citation `burns2000' on page 5 undefined on input line 366.
 
 
-Package natbib Warning: Citation `aaroe2014' on page 5 undefined on input line 368.
+Package natbib Warning: Citation `hainmueller2014' on page 5 undefined on input line 368.
 
 
-Package natbib Warning: Citation `culpepper2024' on page 5 undefined on input line 368.
+Package natbib Warning: Citation `artiles2014' on page 5 undefined on input line 372.
 
 
-Package natbib Warning: Citation `burns2000' on page 5 undefined on input line 372.
+Package natbib Warning: Citation `heath2020' on page 5 undefined on input line 383.
 
 
-Package natbib Warning: Citation `lahav2004' on page 5 undefined on input line 373.
+Package natbib Warning: Citation `heath2020a' on page 5 undefined on input line 383.
 
 
-Package natbib Warning: Citation `jaramillo-dent2021' on page 5 undefined on input line 380.
+Package natbib Warning: Citation `burns2000' on page 5 undefined on input line 383.
 
 
-Package natbib Warning: Citation `mutz2022' on page 5 undefined on input line 380.
+Package natbib Warning: Citation `espenshade1993' on page 5 undefined on input line 387.
 
 
-Package natbib Warning: Citation `carter2017' on page 5 undefined on input line 380.
+Package natbib Warning: Citation `davidov2020' on page 5 undefined on input line 390.
 
 
-Package natbib Warning: Citation `mutz2022' on page 5 undefined on input line 385.
+Package natbib Warning: Citation `ayers2009' on page 5 undefined on input line 395.
 
 
-Package natbib Warning: Citation `mondon2022' on page 5 undefined on input line 389.
+Package natbib Warning: Citation `deconinck2020' on page 5 undefined on input line 397.
+
+
+Package natbib Warning: Citation `solano2023' on page 5 undefined on input line 403.
+
+
+Package natbib Warning: Citation `avdan2023' on page 5 undefined on input line 410.
+
+
+Package natbib Warning: Citation `carter2017' on page 5 undefined on input line 411.
 
 
 
 [5]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 417.
+(c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (4840.7476pt too wide) in paragraph at lines 419--419
+[]\T1/lmtt/m/n/12 While much of the literature focuses on economic or cultural factors that impact immigration attitudes, other impacts have also been shown to play a meaningful role in shaping opinions toward immigration. First, @davidov2020 emphasizes the role of individual values such as universalism or conservatism in impacting the degree to which respondents view immigration as a threat. Second, perceived threats to human security can also impact attitudes towards immigration. For instance, terrorist attacks are shown to bolster support for more restrictionist immigration policy [@young2018]. Third, the particularity of whether migrants are `immigrants' or `refugees' can impact attitudes regarding these groups, where refugees receive higher levels of support than immigrants [@deconinck2020]. Additionally, public opinion may be further shaped by existing policy.[] 
+ []
 
-Package natbib Warning: Citation `pettigrew2006' on page 6 undefined on input line 409.
+
+Package natbib Warning: Citation `ford2015' on page 6 undefined on input line 425.
 
 
-Package natbib Warning: Citation `mirwaldt2010' on page 6 undefined on input line 413.
+Package natbib Warning: Citation `ford2015' on page 6 undefined on input line 426.
 
 
-Package natbib Warning: Citation `deconinck2020a' on page 6 undefined on input line 420.
-
-
-Package natbib Warning: Citation `carmel2021' on page 6 undefined on input line 420.
+Package natbib Warning: Citation `morales2015' on page 6 undefined on input line 429.
 
 
 
 [6]
 
-Package natbib Warning: Citation `jaramillo-dent2021' on page 7 undefined on input line 429.
+Package natbib Warning: Citation `mondak1993' on page 7 undefined on input line 442.
 
 
-Package natbib Warning: Citation `mutz2022' on page 7 undefined on input line 431.
+Package natbib Warning: Citation `rugeley2012' on page 7 undefined on input line 442.
 
 
-Package natbib Warning: Citation `deconinck2020a' on page 7 undefined on input line 462.
+Package natbib Warning: Citation `petersen2009' on page 7 undefined on input line 442.
+
+
+Package natbib Warning: Citation `aaroe2014' on page 7 undefined on input line 442.
+
+
+Package natbib Warning: Citation `culpepper2024' on page 7 undefined on input line 442.
+
+
+Package natbib Warning: Citation `burns2000' on page 7 undefined on input line 446.
+
+
+Package natbib Warning: Citation `lahav2004' on page 7 undefined on input line 447.
+
+
+Package natbib Warning: Citation `jaramillo-dent2021' on page 7 undefined on input line 454.
+
+
+Package natbib Warning: Citation `mutz2022' on page 7 undefined on input line 454.
+
+
+Package natbib Warning: Citation `carter2017' on page 7 undefined on input line 454.
+
+
+Package natbib Warning: Citation `mutz2022' on page 7 undefined on input line 459.
+
+
+Package natbib Warning: Citation `mondon2022' on page 7 undefined on input line 463.
 
 
 
 [7]
 
-Package natbib Warning: Citation `bajomi-lazar2019' on page 8 undefined on input line 479.
+Package natbib Warning: Citation `pettigrew2006' on page 8 undefined on input line 486.
 
 
-Package natbib Warning: Citation `jaramillo-dent2021' on page 8 undefined on input line 486.
+Package natbib Warning: Citation `mirwaldt2010' on page 8 undefined on input line 490.
 
 
-Package natbib Warning: Citation `castaneda2020' on page 8 undefined on input line 493.
+Package natbib Warning: Citation `deconinck2020a' on page 8 undefined on input line 497.
 
 
-Package natbib Warning: Citation `semetko1992' on page 8 undefined on input line 505.
+Package natbib Warning: Citation `carmel2021' on page 8 undefined on input line 497.
 
 
-Package natbib Warning: Citation `aaroe2014' on page 8 undefined on input line 508.
+Package natbib Warning: Citation `jaramillo-dent2021' on page 8 undefined on input line 506.
+
+
+Package natbib Warning: Citation `mutz2022' on page 8 undefined on input line 508.
 
 
 
 [8]
 
-Package natbib Warning: Citation `cortina2020' on page 9 undefined on input line 526.
+Package natbib Warning: Citation `deconinck2020a' on page 9 undefined on input line 539.
 
 
-Package natbib Warning: Citation `cortina2020' on page 9 undefined on input line 531.
-
-
-Package natbib Warning: Citation `ogrady2019' on page 9 undefined on input line 536.
-
-
-Package natbib Warning: Citation `dipiazza2023' on page 9 undefined on input line 539.
-
-
-Package natbib Warning: Citation `kamenova2017' on page 9 undefined on input line 539.
+Package natbib Warning: Citation `bajomi-lazar2019' on page 9 undefined on input line 556.
 
 
 
 [9]
 
-Package natbib Warning: Citation `bajomi-lazar2019' on page 10 undefined on input line 546.
+Package natbib Warning: Citation `jaramillo-dent2021' on page 10 undefined on input line 563.
 
 
-Package natbib Warning: Citation `bajomi-lazar2019' on page 10 undefined on input line 550.
+Package natbib Warning: Citation `castaneda2020' on page 10 undefined on input line 570.
 
 
-Package natbib Warning: Citation `culpepper2024' on page 10 undefined on input line 554.
+Package natbib Warning: Citation `semetko1992' on page 10 undefined on input line 582.
 
 
-Package natbib Warning: Citation `mclaren2020' on page 10 undefined on input line 556.
-
-
-Package natbib Warning: Citation `heidenreich2020' on page 10 undefined on input line 560.
-
-
-Package natbib Warning: Citation `bajomi-lazar2019' on page 10 undefined on input line 567.
-
-
-Package natbib Warning: Citation `bajomi-lazar2019' on page 10 undefined on input line 571.
+Package natbib Warning: Citation `aaroe2014' on page 10 undefined on input line 585.
 
 
 
 [10]
-Overfull \hbox (2197.81128pt too wide) in paragraph at lines 590--590
-[]\T1/lmtt/m/n/12 In order to test my hypothesis, I largely rely on data provided by the Integrated Values Survey (IVS) (1981-2022) [@evs2022; @hearpfer2024]. This survey combines data from the European Value Study [@evs2022] and the World Value Survey [@harpfer2024] into one larger cross-national time-series dataset. This provides an initial potential sample of 666,907 observations over 7 waves, featuring 118 different countries and territories.[] 
- []
+
+Package natbib Warning: Citation `cortina2020' on page 11 undefined on input line 603.
 
 
-Package natbib Warning: Citation `evs2022' on page 11 undefined on input line 594.
+Package natbib Warning: Citation `cortina2020' on page 11 undefined on input line 608.
 
 
-Package natbib Warning: Citation `hearpfer2024' on page 11 undefined on input line 594.
+Package natbib Warning: Citation `ogrady2019' on page 11 undefined on input line 613.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 622.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 622.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 622.
+
+Package natbib Warning: Citation `dipiazza2023' on page 11 undefined on input line 616.
+
+
+Package natbib Warning: Citation `kamenova2017' on page 11 undefined on input line 616.
+
+
+Package natbib Warning: Citation `bajomi-lazar2019' on page 11 undefined on input line 623.
+
+
+Package natbib Warning: Citation `bajomi-lazar2019' on page 11 undefined on input line 627.
+
+
+Package natbib Warning: Citation `culpepper2024' on page 11 undefined on input line 631.
+
+
+Package natbib Warning: Citation `mclaren2020' on page 11 undefined on input line 633.
+
+
+Package natbib Warning: Citation `heidenreich2020' on page 11 undefined on input line 637.
+
 
 
 [11]
 
-Package natbib Warning: Citation `simmons2022' on page 12 undefined on input line 632.
+Package natbib Warning: Citation `bajomi-lazar2019' on page 12 undefined on input line 644.
 
 
-Package natbib Warning: Citation `simmons2022' on page 12 undefined on input line 640.
+Package natbib Warning: Citation `bajomi-lazar2019' on page 12 undefined on input line 648.
 
 
-Package natbib Warning: Citation `simmons2022' on page 12 undefined on input line 644.
+Package natbib Warning: Citation `evs2022' on page 12 undefined on input line 667.
+
+
+Package natbib Warning: Citation `hearpfer2024' on page 12 undefined on input line 667.
+
+
+Package natbib Warning: Citation `evs2022' on page 12 undefined on input line 668.
+
+
+Package natbib Warning: Citation `harpfer2024' on page 12 undefined on input line 669.
 
 
 
 [12]
 
-Package natbib Warning: Citation `worldbank' on page 13 undefined on input line 679.
+Package natbib Warning: Citation `evs2022' on page 13 undefined on input line 675.
 
 
-Package natbib Warning: Citation `bell2015' on page 13 undefined on input line 689.
+Package natbib Warning: Citation `hearpfer2024' on page 13 undefined on input line 675.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 703.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 703.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 703.
 
 
-LaTeX Warning: File `figures/border_orientation_figure1.png' not found on input line 698.
+[13]
+
+Package natbib Warning: Citation `simmons2022' on page 14 undefined on input line 713.
 
 
-! Package pdftex.def Error: File `figures/border_orientation_figure1.png' not found: using draft setting.
+Package natbib Warning: Citation `simmons2022' on page 14 undefined on input line 721.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.698 ...s{figures/border_orientation_figure1.png}
-                                                   
+
+Package natbib Warning: Citation `simmons2022' on page 14 undefined on input line 725.
+
+
+
+[14]
+
+Package natbib Warning: Citation `worldbank' on page 15 undefined on input line 760.
+
+
+Package natbib Warning: Citation `bell2015' on page 15 undefined on input line 770.
+
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_figure1.png, id=125, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_figure1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_figure1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_figure1.png  used on input line 779.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+
+[15]
+
+[16 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_figure1.png (PNG copy)>]
+
+Package natbib Warning: Citation `mutz2022' on page 17 undefined on input line 810.
+
+
+Package natbib Warning: Citation `mutz2022' on page 17 undefined on input line 811.
+
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_policy_figure1.png, id=136, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_policy_figure1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_policy_figure1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_policy_figure1.png  used on input line 819.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 819--831
+[][]
+ []
+
+
+
+[17 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/border_orientation_policy_figure1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_marginal_1.png, id=141, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_marginal_1.png  used on input line 832.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 832--848
+[][]
+ []
+
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_policy_marginal_1.png, id=142, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_policy_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_policy_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_policy_marginal_1.png  used on input line 849.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 849--869
+[][]
+ []
+
+
+
+[18 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_marginal_1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_marginal_1.png, id=147, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_marginal_1.png  used on input line 870.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 870--885
+[][]
+ []
+
+
+
+[19 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4_policy_marginal_1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_policy_marginal_1.png, id=153, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_policy_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_policy_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_policy_marginal_1.png  used on input line 886.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 886--901
+[][]
+ []
+
+
+
+[20 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_marginal_1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_marginal_1.png, id=159, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_marginal_1.png  used on input line 902.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 902--919
+[][]
+ []
+
+
+
+[21 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m4a_policy_marginal_1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_policy_marginal_1.png, id=164, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_policy_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_policy_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_policy_marginal_1.png  used on input line 920.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 920--933
+[][]
+ []
+
+
+
+[22 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_marginal_1.png (PNG copy)>]
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_marginal_1.png, id=169, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_marginal_1.png  used on input line 936.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+<C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_policy_marginal_1.png, id=170, 3011.25pt x 1806.75pt>
+File: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_policy_marginal_1.png Graphic file (type png)
+<use C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_policy_marginal_1.png>
+Package pdftex.def Info: C:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_policy_marginal_1.png  used on input line 940.
+(pdftex.def)             Requested size: 469.72556pt x 281.83533pt.
+
+Overfull \hbox (17.59535pt too wide) in paragraph at lines 940--958
+[][]
+ []
+
+
+
+[23 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m5_policy_marginal_1.png (PNG copy)>]
+
+[24 <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_marginal_1.png (PNG copy)> <c:/Users/tdain/OneDrive/Desktop/R/publicopinionpaper/public-opinion-paper/figures/m6_policy_marginal_1.png (PNG copy)>]
+
+Package natbib Warning: Citation `bajomi-lazar2019' on page 25 undefined on input line 971.
+
+
+Package natbib Warning: Citation `young2018' on page 25 undefined on input line 973.
+
+
+
+[25]
+
+[26]
+
+Package natbib Warning: Citation `carter2017' on page 27 undefined on input line 1033.
+
+
+
+[27] (./actual_article.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+(./actual_article.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-11-02>
+ ***********
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `actual_article.out' has not changed.
+(rerunfilecheck)             Checksum: DE62CED4346FAA6B5319E73783334180;2023.
+ ) 
 Here is how much of TeX's memory you used:
- 11562 strings out of 475290
- 188817 string characters out of 5767280
- 585103 words of memory out of 5000000
- 34249 multiletter control sequences out of 15000+600000
- 631955 words of font info for 82 fonts, out of 8000000 for 9000
+ 11638 strings out of 475290
+ 195563 string characters out of 5767280
+ 586181 words of memory out of 5000000
+ 34301 multiletter control sequences out of 15000+600000
+ 631580 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,889b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,889b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/Users/tdain/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on actual_article.pdf (27 pages, 3461590 bytes).
+PDF statistics:
+ 256 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

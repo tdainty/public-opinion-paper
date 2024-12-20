@@ -1,21 +1,20 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: actual_article.aux
-I couldn't open style file apsr.bst
+I couldn't open style file plainnat.bst
 ---line 5 of file actual_article.aux
- : \bibstyle{apsr
- :               }
+ : \bibstyle{plainnat
+ :                   }
 I'm skipping whatever remains of this command
-I couldn't open database file publicopinioncitations.bib
----line 92 of file actual_article.aux
- : \bibdata{publicopinioncitations.bib
- :                                    }
+White space in argument---line 116 of file actual_article.aux
+ : \bibdata{
+ :           }
 I'm skipping whatever remains of this command
 I found no database files---while reading file actual_article.aux
 I found no style file---while reading file actual_article.aux
-You've used 46 entries,
+You've used 53 entries,
             0 wiz_defined-function locations,
-            131 strings with 1043 characters,
+            137 strings with 1101 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
