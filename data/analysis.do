@@ -1,6 +1,7 @@
 ***Analyzing Data for Presentation and Final Draft***
 
 *set cd to main folder this file is in (e.g., "public-opinion-paper)
+*unzip the compiled_dataset folder and move the file to the larger "data" folder that the zip is originally found within before running.
 
 use "data/compiled_dataset.dta", clear
 
